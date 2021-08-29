@@ -16,20 +16,20 @@ export default function Home() {
           style={{ position: "absolute" }}
         >
           <Row className="header" justify="end">
-            <Button className="header-button">Projects</Button>
-            <Button className="header-button">About Me</Button>
-            <Button className="header-button">Resume</Button>
+            <Button className="header-button" type="link">Projects</Button>
+            <Button className="header-button" type="link">About Me</Button>
+            <Button className="header-button" type="link">Resume</Button>
           </Row>
         </Affix>
         <Row className="App-content intro-content">
           <Image
-            width={100}
+            width={150}
             src={anna}
             preview={false}
             style={{ marginBottom: 30 }}
           />
-          <Title style={{ color: "black" }}>Hello, my name is Anna.</Title>
-          <Title style={{ color: "black", marginTop: 0 }} level={3}>
+          <Title className="title" style={{ color: "black", fontSize: 77, fontFamily: 'Araboto-Normal' }}>Hello, my name is <span style={{ color: "#DE641F", fontFamily: 'Araboto-Normal' }}>Anna</span>.</Title>
+          <Title className="title" style={{ color: "black", marginTop: -30, fontSize: 46, fontFamily: 'Araboto-Light' }} level={3}>
             Biologist by day, designer by night.
           </Title>
         </Row>

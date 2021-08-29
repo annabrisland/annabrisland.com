@@ -34,6 +34,15 @@
   width: 100px;
   height: 100%;
   margin-left: 5%;
+  border-color: transparent;
+  box-shadow: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header-button:hover {
+    color: gray;
 }
 
 .slide {
@@ -42,10 +51,14 @@
 
 .intro-content {
   justify-content: center;
-  height: 80vh;
+  height: 85vh;
 }
 
 .arrow {
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
+}
+
+.title {
+    letter-spacing: -0.03em;
 }

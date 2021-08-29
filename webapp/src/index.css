@@ -1,6 +1,6 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Araboto-Normal', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: "Araboto-Normal";
+  src: local('Araboto'), url(./fonts/Araboto-Normal.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Araboto-Black";
+  src: local('Araboto'), url(./fonts/Araboto-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Araboto-Bold";
+  src: local('Araboto'), url(./fonts/Araboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Araboto-Thin";
+  src: local('Araboto'), url(./fonts/Araboto-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Araboto-Medium";
+  src: local('Araboto'), url(./fonts/Araboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Araboto-Light";
+  src: local('Araboto'), url(./fonts/Araboto-Light.ttf) format('truetype');
 }
