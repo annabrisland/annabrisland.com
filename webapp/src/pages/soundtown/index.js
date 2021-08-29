@@ -5,16 +5,10 @@ import anna from "../../images/anna.png";
 import arrow from "../../images/arrow.gif";
 import teatime from "../../images/TeaTime.png";
 import soundtown from "../../images/SoundTown.png";
-import fungi from "../../images/fungi.png";
-import dna from "../../images/dna.png";
 import quote from "../../images/quote.png";
-import { useRef } from "react";
 
-export default function Home() {
+export default function SoundTown() {
   const { Title, Text } = Typography;
-  const history = useHistory();
-  const projectRef = useRef();
-  const aboutRef = useRef();
 
   return (
     <Space className="App" size={"large"} align="start">
@@ -25,19 +19,13 @@ export default function Home() {
           style={{ position: "absolute" }}
         >
           <Row className="header" justify="end">
-            <Button className="header-button" type="link" onClick={() => {
-              projectRef.current.scrollIntoView({behavior: "smooth"})
-            }}>
+            <Button className="header-button" type="link">
               Projects
             </Button>
-            <Button className="header-button" type="link" onClick={() => {
-              aboutRef.current.scrollIntoView({behavior: "smooth"})
-            }}>
+            <Button className="header-button" type="link">
               About Me
             </Button>
-            <Button className="header-button" type="link" onClick={() => {
-              window.open("../../Anna_Brisland_Resume.pdf");
-            }}>
+            <Button className="header-button" type="link">
               Resume
             </Button>
           </Row>
@@ -80,7 +68,7 @@ export default function Home() {
           <Image width={100} src={arrow} preview={false} />
         </Row>
       </Row>
-      <Row className="App-content slide" style={{marginTop: -30}} ref={projectRef}>
+      <Row className="App-content slide" style={{marginTop: -30}}>
         <Title
           className="title"
           style={{
@@ -101,19 +89,15 @@ export default function Home() {
         >
           <Image
             width={"48%"}
-            height={350}
             src={teatime}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
-            onClick={() => { history.push("/teatime/") }}
           />
           <Image
             width={"48%"}
-            height={350}
             src={soundtown}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
-            onClick={() => { history.push("/soundtown/") }}
           />
         </Col>
       </Row>
@@ -130,21 +114,19 @@ export default function Home() {
         >
           <Image
             width={"48%"}
-            height={350}
-            src={fungi}
+            src={teatime}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
           />
           <Image
             width={"48%"}
-            height={350}
-            src={dna}
+            src={soundtown}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
           />
         </Col>
       </Row>
-      <Row className="App-content slide" ref={aboutRef}>
+      <Row className="App-content slide">
         <Title
           className="title"
           style={{ color: "black", fontSize: 50, fontFamily: "Araboto-Normal" }}
