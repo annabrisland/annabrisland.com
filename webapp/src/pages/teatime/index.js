@@ -1,14 +1,13 @@
-import { Typography, Row, Col, Button, Image, Space, Affix } from "antd";
+import { Typography, Row, Col, Image, Affix } from "antd";
 import { useHistory } from "react-router-dom";
 import "./index.css";
-import anna from "../../images/anna.png";
 import back from "../../images/back.png";
 import teatimeIntro from "../../images/teatimeIntro.png";
 import teatimeScreen from "../../images/teatimeScreen.png";
-import quote from "../../images/quote.png";
 
 export default function TeaTime() {
   const { Title, Text } = Typography;
+  const history = useHistory();
 
   return (
     <Row
@@ -21,17 +20,16 @@ export default function TeaTime() {
       }}
     >
       <Affix offsetTop={50} onChange={(affixed) => console.log(affixed)} style={{ marginLeft: 50, marginTop: -10 }}>
-        <Image width={100} src={back} preview={false} />
+        <Image width={100} src={back} preview={false} onClick={() => history.goBack()} />
       </Affix>
       <Col
         style={{
           display: "flex",
-          flex: 1,
+          flex: 0.1,
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        {/* <Image width={100} src={back} preview={false} /> */}
       </Col>
       <Col style={{ flex: 10, paddingLeft: "5%", paddingRight: "5%" }}>
         <Row justify="space-between">

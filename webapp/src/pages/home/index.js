@@ -9,6 +9,8 @@ import fungi from "../../images/fungi.png";
 import dna from "../../images/dna.png";
 import quote from "../../images/quote.png";
 import { useRef } from "react";
+import { MotionAnimate } from "react-motion-animate";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const { Title, Text } = Typography;
@@ -25,19 +27,34 @@ export default function Home() {
           style={{ position: "absolute" }}
         >
           <Row className="header" justify="end">
-            <Button className="header-button" type="link" onClick={() => {
-              projectRef.current.scrollIntoView({behavior: "smooth"})
-            }}>
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                projectRef.current.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Projects
             </Button>
-            <Button className="header-button" type="link" onClick={() => {
-              aboutRef.current.scrollIntoView({behavior: "smooth"})
-            }}>
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                aboutRef.current.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               About Me
             </Button>
-            <Button className="header-button" type="link" onClick={() => {
-              window.open("../../Anna_Brisland_Resume.pdf");
-            }}>
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                window.open(
+                  "https://annabrisland.com/Anna_Brisland_Resume.pdf",
+                  "_blank"
+                );
+              }}
+            >
               Resume
             </Button>
           </Row>
@@ -80,7 +97,11 @@ export default function Home() {
           <Image width={100} src={arrow} preview={false} />
         </Row>
       </Row>
-      <Row className="App-content slide" style={{marginTop: -30}} ref={projectRef}>
+      <Row
+        className="App-content slide"
+        style={{ marginTop: -30 }}
+        ref={projectRef}
+      >
         <Title
           className="title"
           style={{
@@ -99,13 +120,31 @@ export default function Home() {
             marginBottom: 10,
           }}
         >
+          <MotionAnimate animation="scrollOpacity">
+            <Title
+              className="title rotated"
+              style={{
+                color: "#C4C4C4",
+                fontSize: 40,
+                fontFamily: "Araboto-Normal",
+                alignSelf: "center",
+                marginLeft: -150,
+                marginTop: 0,
+                position: "absolute",
+              }}
+            >
+              Design
+            </Title>
+          </MotionAnimate>
           <Image
             width={"48%"}
             height={350}
             src={teatime}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
-            onClick={() => { history.push("/teatime/") }}
+            onClick={() => {
+              history.push("/teatime/");
+            }}
           />
           <Image
             width={"48%"}
@@ -113,14 +152,13 @@ export default function Home() {
             src={soundtown}
             style={{ objectFit: "cover", borderRadius: 30 }}
             preview={false}
-            onClick={() => { history.push("/soundtown/") }}
+            onClick={() => {
+              history.push("/soundtown/");
+            }}
           />
         </Col>
       </Row>
-      <Row
-        className="App-content semi-slide"
-        justify="center"
-      >
+      <Row className="App-content semi-slide" justify="center">
         <Col
           style={{
             display: "flex",
@@ -128,6 +166,23 @@ export default function Home() {
             marginBottom: 10,
           }}
         >
+          <div style={{ position: "absolute" }}>
+            <MotionAnimate animation="scrollOpacity">
+              <Title
+                className="title rotated"
+                style={{
+                  color: "#C4C4C4",
+                  fontSize: 40,
+                  fontFamily: "Araboto-Normal",
+                  alignSelf: "center",
+                  marginLeft: -150,
+                  marginTop: 150,
+                }}
+              >
+                Biology
+              </Title>
+            </MotionAnimate>
+          </div>
           <Image
             width={"48%"}
             height={350}
