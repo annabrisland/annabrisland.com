@@ -51,8 +51,8 @@
 }
 
 .semi-slide {
-    justify-content: center;
-  }
+  justify-content: center;
+}
 
 .intro-content {
   justify-content: center;
@@ -71,3 +71,16 @@
 .rotated {
   transform: rotate(-90deg);
 }
+
+.work-card {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+

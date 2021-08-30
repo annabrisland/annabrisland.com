@@ -18,6 +18,11 @@ code {
 }
 
 @font-face {
+  font-family: "Roboto-Light";
+  src: local('Roboto'), url(./fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
   font-family: "Araboto-Black";
   src: local('Araboto'), url(./fonts/Araboto-Black.ttf) format('truetype');
 }

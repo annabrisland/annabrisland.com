@@ -19,57 +19,59 @@ export default function SoundTown() {
         paddingBottom: "5%",
       }}
     >
-      <Affix offsetTop={50} onChange={(affixed) => console.log(affixed)} style={{ marginLeft: 50, marginTop: -10 }}>
-        <Image width={100} src={back} preview={false} onClick={() => history.goBack()} />
-      </Affix>
-      <Col
-        style={{
-          display: "flex",
-          flex: 0.1,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-      </Col>
-      <Col style={{ flex: 10, paddingLeft: "5%", paddingRight: "5%" }}>
-        <Row justify="space-between">
+      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+        <Row justify="center">
           <Title
             className="title"
             style={{
               color: "black",
               fontSize: 70,
               fontFamily: "Araboto-Normal",
+              marginBottom: 0,
             }}
           >
             SoundTown
           </Title>
-          <Title
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Light",
-            }}
-          >
-            July 2021
-          </Title>
         </Row>
-        <Row>
-          <Image
-            width={"100%"}
-            src={soundtownIntro}
-            style={{ objectFit: "cover", borderRadius: 30, marginBottom: 50 }}
-            preview={false}
-          />
-        </Row>
-        <Row>
+        <Row justify="center">
           <Text
             style={{
               color: "black",
-              fontSize: 25,
+              fontSize: 20,
+              fontFamily: "Roboto-Light",
+              marginBottom: 30,
+            }}
+          >
+            July 2021
+          </Text>
+        </Row>
+        <Row justify="center">
+          <Image
+            width={"100%"}
+            src={soundtownIntro}
+            style={{ objectFit: "cover", marginBottom: 50 }}
+            preview={false}
+          />
+        </Row>
+        <Row justify="center">
+          <Title
+            className="title"
+            style={{
+              color: "black",
+              fontSize: 50,
               fontFamily: "Araboto-Normal",
-              width: "50%",
-              marginLeft: "50%",
-              marginBottom: -400,
+              marginBottom: 30,
+            }}
+          >
+            About
+          </Title>
+        </Row>
+        <Row justify="center">
+          <Text
+            style={{
+              color: "black",
+              fontSize: 20,
+              fontFamily: "Araboto-Normal",
             }}
           >
             The following three points are the priorities I am working on with a
@@ -81,15 +83,16 @@ export default function SoundTown() {
             sprints and will require the tools that make the most sense in
             efficiently completing the objective.
           </Text>
+        </Row>
+        <Row justify="center">
           <Image
-            width={"70%"}
+            width={"100%"}
             src={soundtownScreen}
             style={{ objectFit: "contain" }}
             preview={false}
           />
         </Row>
       </Col>
-      <Col style={{ flex: 1 }}></Col>
     </Row>
   );
 }
