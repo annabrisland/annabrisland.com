@@ -1,13 +1,10 @@
-import { Typography, Row, Col, Image, Affix } from "antd";
-import { useHistory } from "react-router-dom";
+import { Typography, Row, Col, Image } from "antd";
 import "./index.css";
-import back from "../../images/back.png";
 import teatimeIntro from "../../images/teatimeIntro.png";
 import teatimeScreen from "../../images/teatimeScreen.png";
 
 export default function TeaTime() {
   const { Title, Text } = Typography;
-  const history = useHistory();
 
   return (
     <Row

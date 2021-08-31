@@ -51,8 +51,8 @@
 }
 
 .semi-slide {
-  justify-content: center;
-}
+    justify-content: center;
+  }
 
 .intro-content {
   justify-content: center;
@@ -66,42 +66,4 @@
 
 .title {
   letter-spacing: -0.03em;
-}
-
-.rotated {
-  transform: rotate(-90deg);
-}
-
-.work-card {
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.work-card:hover {
-  opacity: 1;
-  cursor: pointer;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.fade {
-  -o-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
 }

@@ -1,9 +1,7 @@
-import { Typography, Row, Col, Image } from "antd";
+import { Typography, Row, Col } from "antd";
 import "./index.css";
-import soundtownIntro from "../../images/soundtownIntro.png";
-import soundtownScreen from "../../images/soundtownScreen.png";
 
-export default function SoundTown() {
+export default function DNA() {
   const { Title, Text } = Typography;
 
   return (
@@ -27,7 +25,7 @@ export default function SoundTown() {
               marginBottom: 0,
             }}
           >
-            SoundTown
+            DNA Analysis
           </Title>
         </Row>
         <Row justify="center">
@@ -41,14 +39,6 @@ export default function SoundTown() {
           >
             July 2021
           </Text>
-        </Row>
-        <Row justify="center">
-          <Image
-            width={"100%"}
-            src={soundtownIntro}
-            style={{ objectFit: "cover", marginBottom: 50 }}
-            preview={false}
-          />
         </Row>
         <Row justify="center">
           <Title
@@ -82,14 +72,6 @@ export default function SoundTown() {
           </Text>
         </Row>
       </Col>
-      <Row justify="center">
-          <Image
-            width={"90%"}
-            src={soundtownScreen}
-            style={{ objectFit: "contain" }}
-            preview={false}
-          />
-        </Row>
     </Row>
   );
 }
