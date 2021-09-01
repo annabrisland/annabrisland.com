@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/annabrisland.com/static/css/main.5298fe0b.chunk.css",
+    "main.js": "/annabrisland.com/static/js/main.3c74a4d5.chunk.js",
+    "main.js.map": "/annabrisland.com/static/js/main.3c74a4d5.chunk.js.map",
+    "runtime-main.js": "/annabrisland.com/static/js/runtime-main.78559122.js",
+    "runtime-main.js.map": "/annabrisland.com/static/js/runtime-main.78559122.js.map",
+    "static/css/2.a95be28f.chunk.css": "/annabrisland.com/static/css/2.a95be28f.chunk.css",
+    "static/js/2.a07bb0cc.chunk.js": "/annabrisland.com/static/js/2.a07bb0cc.chunk.js",
+    "static/js/2.a07bb0cc.chunk.js.map": "/annabrisland.com/static/js/2.a07bb0cc.chunk.js.map",
+    "static/js/3.89f5a918.chunk.js": "/annabrisland.com/static/js/3.89f5a918.chunk.js",
+    "static/js/3.89f5a918.chunk.js.map": "/annabrisland.com/static/js/3.89f5a918.chunk.js.map",
+    "index.html": "/annabrisland.com/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/annabrisland.com/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.5298fe0b.chunk.css.map": "/annabrisland.com/static/css/main.5298fe0b.chunk.css.map",
+    "static/js/2.a07bb0cc.chunk.js.LICENSE.txt": "/annabrisland.com/static/js/2.a07bb0cc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/annabrisland.com/static/media/Roboto-Light.8be2d148.ttf",
+    "static/media/SoundTown.cc538d6c.png": "/annabrisland.com/static/media/SoundTown.cc538d6c.png",
+    "static/media/TeaTime.2456f140.png": "/annabrisland.com/static/media/TeaTime.2456f140.png",
+    "static/media/anna.f7ae045b.png": "/annabrisland.com/static/media/anna.f7ae045b.png",
+    "static/media/arrow.0a69b1f9.gif": "/annabrisland.com/static/media/arrow.0a69b1f9.gif",
+    "static/media/dna.d60508a8.png": "/annabrisland.com/static/media/dna.d60508a8.png",
+    "static/media/fungi.d255b774.png": "/annabrisland.com/static/media/fungi.d255b774.png",
+    "static/media/soundtownIntro.8685425a.png": "/annabrisland.com/static/media/soundtownIntro.8685425a.png",
+    "static/media/soundtownScreen.381c50df.png": "/annabrisland.com/static/media/soundtownScreen.381c50df.png",
+    "static/media/soundtownScreen2.060b586a.png": "/annabrisland.com/static/media/soundtownScreen2.060b586a.png",
+    "static/media/teatimeIntro.b3f970a8.png": "/annabrisland.com/static/media/teatimeIntro.b3f970a8.png",
+    "static/media/teatimeScreen.7af13e2d.png": "/annabrisland.com/static/media/teatimeScreen.7af13e2d.png",
+    "static/media/teatimeScreen2.98fe8417.png": "/annabrisland.com/static/media/teatimeScreen2.98fe8417.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78559122.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.a07bb0cc.chunk.js",
+    "static/css/main.5298fe0b.chunk.css",
+    "static/js/main.3c74a4d5.chunk.js"
+  ]
+}
