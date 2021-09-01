@@ -11,6 +11,8 @@ import quote from "../../images/quote.png";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
 
+let loveCount = 0;
+
 export default function Home() {
   const { Title, Text } = Typography;
   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -615,7 +617,14 @@ export default function Home() {
                 width: "100%",
               }}
             >
-              As a scientist and self-taught designer, I love crafting creative
+              As a scientist and self-taught designer, I <Text onClick={() => {
+                if (loveCount >= 2) {
+                  loveCount = 0
+                  window.open('https://annabrisland.com/harin');
+                } else {
+                  loveCount++
+                }
+              }}>love</Text> crafting creative
               solutions to overcome both biological and design-related
               obstacles. I firmly believe that the best way to teach and relay
               information to others is through effective visualisation and great
