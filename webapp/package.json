@@ -2,7 +2,7 @@
   "name": "annabrisland.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://annabrisland.github.io/annabrisland.com",
+  "homepage": "http://annabrisland.github.io/",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
     "antd": "^4.16.13",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo > 'annabrisland.com' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
