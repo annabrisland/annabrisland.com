@@ -51,47 +51,50 @@ export default function Home() {
   return (
     <Space className="App" size={"large"} align="start">
       <Row className="slide">
-          <Affix
+        <Affix
           className="fade"
-            offsetTop={50}
-            onChange={(affixed) => console.log(affixed)}
-            style={{ position: "absolute", opacity: (scrollPosition <= 400 || scrollPosition >= 2200) ? 1 : 0 }}
-          >
-            <Row className="header" justify="end">
-              <Button
-                className="header-button"
-                type="link"
-                onClick={() => {
-                  projectRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Projects
-              </Button>
-              <Button
-                className="header-button"
-                type="link"
-                onClick={() => {
-                  aboutRef.current.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                About Me
-              </Button>
-              <Button
-                className="header-button"
-                type="link"
-                onClick={() => {
-                  window.open(
-                    "https://annabrisland.com/Anna_Brisland_Resume.pdf",
-                    "_blank"
-                  );
-                }}
-              >
-                Resume
-              </Button>
-            </Row>
-          </Affix>
+          offsetTop={50}
+          onChange={(affixed) => console.log(affixed)}
+          style={{
+            position: "absolute",
+            opacity: scrollPosition <= 400 || scrollPosition >= 2200 ? 1 : 0,
+          }}
+        >
+          <Row className="header" justify="end">
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                projectRef.current.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Projects
+            </Button>
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                aboutRef.current.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About Me
+            </Button>
+            <Button
+              className="header-button"
+              type="link"
+              onClick={() => {
+                window.open(
+                  "https://annabrisland.com/Anna_Brisland_Resume.pdf",
+                  "_blank"
+                );
+              }}
+            >
+              Resume
+            </Button>
+          </Row>
+        </Affix>
         <Row className="App-content intro-content">
           <Image
             width={150}
@@ -126,18 +129,23 @@ export default function Home() {
             Biologist by day, designer by night.
           </Title>
         </Row>
-          <Row className="arrow fade" align="middle" justify="center" style={{opacity: scrollPosition <= 200 ? 1 : 0}}>
-            <Image
-              width={100}
-              src={arrow}
-              preview={false}
-              onClick={() => {
-                projectRef.current.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-            />
-          </Row>
+        <Row
+          className="arrow fade"
+          align="middle"
+          justify="center"
+          style={{ opacity: scrollPosition <= 200 ? 1 : 0 }}
+        >
+          <Image
+            width={100}
+            src={arrow}
+            preview={false}
+            onClick={() => {
+              projectRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          />
+        </Row>
       </Row>
       <Row className="App" ref={projectRef}>
         <Col
@@ -333,12 +341,11 @@ export default function Home() {
         >
           About Me
         </Title>
-        <Col
+        <Row
           style={{
-            display: "flex",
-            justifyContent: "space-between",
             marginBottom: 10,
           }}
+          justify="space-between"
         >
           <Row
             style={{
@@ -377,28 +384,31 @@ export default function Home() {
               Douglas G. Kilburn
             </Text>
           </Row>
-          <Text
+          <Row
             style={{
               flex: 1,
-              color: "black",
-              fontSize: 25,
-              fontFamily: "Araboto-Normal",
             }}
+            justify="end"
+            align="bottom"
           >
-            The following three points are the priorities I am working on with a
-            destination in mind. Each of these include a well defined problem,
-            organized sprints and will require the tools that make the most
-            sense in efficiently completing the objective. The following three
-            points are the priorities I am working on with a destination in
-            mind. Each of these include a well defined problem, organized
-            sprints and will require the tools that make the most sense in
-            efficiently completing the objective. The following three points are
-            the priorities I am working on with a destination in mind. Each of
-            these include a well defined problem, organized sprints and will
-            require the tools that make the most sense in efficiently completing
-            the
-          </Text>
-        </Col>
+            <Text
+              style={{
+                color: "black",
+                fontSize: 35,
+                fontFamily: "Araboto-Normal",
+                width: '100%'
+              }}
+            >
+              As a scientist and self-taught designer, I love crafting creative
+              solutions to overcome both biological and design-related
+              obstacles. I firmly believe that the best way to teach and relay
+              information to others is through effective visualisation and great
+              user experience. Whether it be a powerful graph or a bold user
+              interface, I hope to manifest my enthusiasm for the topic in the
+              viewer through my presentation.
+            </Text>
+          </Row>
+        </Row>
       </Row>
     </Space>
   );

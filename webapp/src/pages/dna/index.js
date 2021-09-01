@@ -1,8 +1,13 @@
 import { Typography, Row, Col } from "antd";
+import { useEffect } from "react";
 import "./index.css";
 
 export default function DNA() {
   const { Title, Text } = Typography;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Row
@@ -33,25 +38,12 @@ export default function DNA() {
             style={{
               color: "black",
               fontSize: 20,
-              fontFamily: "Roboto-Light",
-              marginBottom: 30,
-            }}
-          >
-            July 2021
-          </Text>
-        </Row>
-        <Row justify="center">
-          <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
               fontFamily: "Araboto-Normal",
-              marginBottom: 30,
+              marginBottom: 100,
             }}
           >
-            About
-          </Title>
+            In Progress
+          </Text>
         </Row>
         <Row justify="center">
           <Text
@@ -61,14 +53,7 @@ export default function DNA() {
               fontFamily: "Araboto-Normal",
             }}
           >
-            The following three points are the priorities I am working on with a
-            destination in mind. Each of these include a well defined problem,
-            organized sprints and will require the tools that make the most
-            sense in efficiently completing the objective. The following three
-            points are the priorities I am working on with a destination in
-            mind. Each of these include a well defined problem, organized
-            sprints and will require the tools that make the most sense in
-            efficiently completing the objective.
+            I'm currently working hard on this. Check back later for updates!
           </Text>
         </Row>
       </Col>
