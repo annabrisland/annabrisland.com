@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserView, MobileView } from "react-device-detect";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserView>
+      <App />
+    </BrowserView>
+    <MobileView>
+      <h3 style={{ color: "black", margin: 20, textAlign: "center" }}>
+        This site does not support mobile view yet, please visit on a desktop!
+      </h3>
+    </MobileView>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

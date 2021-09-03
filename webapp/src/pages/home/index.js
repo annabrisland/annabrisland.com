@@ -548,22 +548,29 @@ export default function Home() {
           </Col>
         </Col>
       </Row>
-      <Row className="App-content slide" ref={aboutRef}>
-        <Title
-          className="title"
-          style={{
-            color: "black",
-            fontSize: 50,
-            fontFamily: "Araboto-Normal",
-          }}
-        >
-          About Me
-        </Title>
+      <Row
+        className="App-content slide"
+        ref={aboutRef}
+        style={{ flexDirection: "row", display: "flex" }}
+      >
+        <Row style={{ width: "100%" }} align="bottom">
+          <Title
+            className="title"
+            style={{
+              color: "black",
+              fontSize: 50,
+              fontFamily: "Araboto-Normal",
+            }}
+          >
+            About Me
+          </Title>
+        </Row>
         <Row
           style={{
             marginBottom: 10,
           }}
           justify="space-between"
+          align="middle"
         >
           <Row
             style={{
@@ -612,25 +619,31 @@ export default function Home() {
             <Text
               style={{
                 color: "black",
-                fontSize: 35,
+                fontSize: 33,
                 fontFamily: "Araboto-Normal",
                 width: "100%",
+                marginBottom: 50,
               }}
             >
-              As a scientist and self-taught designer, I <Text onClick={() => {
-                if (loveCount >= 2) {
-                  loveCount = 0
-                  window.open('https://annabrisland.com/harin');
-                } else {
-                  loveCount++
-                }
-              }}>love</Text> crafting creative
-              solutions to overcome both biological and design-related
-              obstacles. I firmly believe that the best way to teach and relay
-              information to others is through effective visualisation and great
-              user experience. Whether it be a powerful graph or a bold user
-              interface, I hope to manifest my enthusiasm for the topic in the
-              viewer through my presentation.
+              As a scientist and self-taught designer, I{" "}
+              <Text
+                onClick={() => {
+                  if (loveCount >= 2) {
+                    loveCount = 0;
+                    window.open("https://annabrisland.com/harin");
+                  } else {
+                    loveCount++;
+                  }
+                }}
+              >
+                love
+              </Text>{" "}
+              crafting creative solutions to overcome both biological and
+              design-related obstacles. I firmly believe that the best way to
+              teach and relay information to others is through effective
+              visualisation and great user experience. Whether it be a powerful
+              graph or a bold user interface, I hope to manifest my enthusiasm
+              for the topic in the viewer through my presentation.
             </Text>
           </Row>
         </Row>
