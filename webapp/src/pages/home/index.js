@@ -287,6 +287,7 @@ export default function Home() {
                   behavior: "smooth",
                 });
               }}
+              style={{ color: "black" }}
             >
               Projects
             </Button>
@@ -296,6 +297,7 @@ export default function Home() {
               onClick={() => {
                 aboutRef.current.scrollIntoView({ behavior: "smooth" });
               }}
+              style={{ color: "black" }}
             >
               About Me
             </Button>
@@ -308,6 +310,7 @@ export default function Home() {
                   "_blank"
                 );
               }}
+              style={{ color: "black" }}
             >
               Resume
             </Button>
