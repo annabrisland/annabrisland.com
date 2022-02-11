@@ -66,7 +66,7 @@ export default function Home() {
             <Title
               className="title"
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 70,
                 fontFamily: "Araboto-Normal",
               }}
@@ -80,7 +80,7 @@ export default function Home() {
             <Title
               className="title"
               style={{
-                color: "black",
+                color: "white",
                 marginTop: -30,
                 fontSize: 42,
                 fontFamily: "Araboto-Light",
@@ -114,7 +114,7 @@ export default function Home() {
             <Text
               className="title"
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 50,
                 fontFamily: "Araboto-Bold",
                 flex: 1.5,
@@ -185,7 +185,7 @@ export default function Home() {
             <Title
               className="title"
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 50,
                 fontFamily: "Araboto-Normal",
               }}
@@ -213,7 +213,7 @@ export default function Home() {
                 />
                 <Text
                   style={{
-                    color: "black",
+                    color: "white",
                     fontSize: 25,
                     fontFamily: "Araboto-Bold",
                     width: "50%",
@@ -225,7 +225,7 @@ export default function Home() {
                 </Text>
                 <Text
                   style={{
-                    color: "black",
+                    color: "white",
                     fontSize: 15,
                     fontFamily: "Araboto-Light",
                     width: "50%",
@@ -244,7 +244,7 @@ export default function Home() {
               >
                 <Text
                   style={{
-                    color: "black",
+                    color: "white",
                     fontSize: 35,
                     fontFamily: "Araboto-Normal",
                     width: "100%",
@@ -287,7 +287,7 @@ export default function Home() {
                   behavior: "smooth",
                 });
               }}
-              style={{ color: "black" }}
+              style={{ color: "white" }}
             >
               Projects
             </Button>
@@ -297,7 +297,7 @@ export default function Home() {
               onClick={() => {
                 aboutRef.current.scrollIntoView({ behavior: "smooth" });
               }}
-              style={{ color: "black" }}
+              style={{ color: "white" }}
             >
               About Me
             </Button>
@@ -310,7 +310,7 @@ export default function Home() {
                   "_blank"
                 );
               }}
-              style={{ color: "black" }}
+              style={{ color: "white" }}
             >
               Resume
             </Button>
@@ -326,7 +326,7 @@ export default function Home() {
           <Title
             className="title"
             style={{
-              color: "black",
+              color: "white",
               fontSize: 70,
               fontFamily: "Araboto-Normal",
             }}
@@ -340,7 +340,7 @@ export default function Home() {
           <Title
             className="title"
             style={{
-              color: "black",
+              color: "white",
               marginTop: -30,
               fontSize: 42,
               fontFamily: "Araboto-Light",
@@ -383,7 +383,7 @@ export default function Home() {
           <Text
             className="title"
             style={{
-              color: "black",
+              color: "white",
               fontSize: 50,
               fontFamily: "Araboto-Bold",
               flex: 1.5,
@@ -402,7 +402,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "All" ? "#DE641F" : "black",
+                color: projectSelected === "All" ? "#DE641F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
               }}
@@ -415,7 +415,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Design" ? "#DE641F" : "black",
+                color: projectSelected === "Design" ? "#DE641F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,
@@ -429,7 +429,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Biology" ? "#DE641F" : "black",
+                color: projectSelected === "Biology" ? "#DE641F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,
@@ -560,7 +560,7 @@ export default function Home() {
           <Title
             className="title"
             style={{
-              color: "black",
+              color: "white",
               fontSize: 50,
               fontFamily: "Araboto-Normal",
             }}
@@ -590,7 +590,7 @@ export default function Home() {
             />
             <Text
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 25,
                 fontFamily: "Araboto-Bold",
                 width: "50%",
@@ -602,7 +602,7 @@ export default function Home() {
             </Text>
             <Text
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 15,
                 fontFamily: "Araboto-Light",
                 width: "50%",
@@ -621,7 +621,7 @@ export default function Home() {
           >
             <Text
               style={{
-                color: "black",
+                color: "white",
                 fontSize: 33,
                 fontFamily: "Araboto-Normal",
                 width: "100%",
@@ -630,6 +630,9 @@ export default function Home() {
             >
               As a scientist and self-taught designer, I{" "}
               <Text
+                style={{
+                  color: "white",
+                }}
                 onClick={() => {
                   if (loveCount >= 2) {
                     loveCount = 0;
