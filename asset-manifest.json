@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.feb90fba.chunk.css",
-    "main.js": "/static/js/main.e6a6bb88.chunk.js",
-    "main.js.map": "/static/js/main.e6a6bb88.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b97d2c8a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b97d2c8a.js.map",
+    "main.css": "/static/css/main.ce3f2743.chunk.css",
+    "main.js": "/static/js/main.07e37e3b.chunk.js",
+    "main.js.map": "/static/js/main.07e37e3b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.18d6a07a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.18d6a07a.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
-    "static/js/2.91d137ec.chunk.js": "/static/js/2.91d137ec.chunk.js",
-    "static/js/2.91d137ec.chunk.js.map": "/static/js/2.91d137ec.chunk.js.map",
-    "static/js/3.7e7de5b3.chunk.js": "/static/js/3.7e7de5b3.chunk.js",
-    "static/js/3.7e7de5b3.chunk.js.map": "/static/js/3.7e7de5b3.chunk.js.map",
+    "static/js/2.849fc5fe.chunk.js": "/static/js/2.849fc5fe.chunk.js",
+    "static/js/2.849fc5fe.chunk.js.map": "/static/js/2.849fc5fe.chunk.js.map",
+    "static/js/3.9d923f08.chunk.js": "/static/js/3.9d923f08.chunk.js",
+    "static/js/3.9d923f08.chunk.js.map": "/static/js/3.9d923f08.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.feb90fba.chunk.css.map": "/static/css/main.feb90fba.chunk.css.map",
-    "static/js/2.91d137ec.chunk.js.LICENSE.txt": "/static/js/2.91d137ec.chunk.js.LICENSE.txt",
+    "static/css/main.ce3f2743.chunk.css.map": "/static/css/main.ce3f2743.chunk.css.map",
+    "static/js/2.849fc5fe.chunk.js.LICENSE.txt": "/static/js/2.849fc5fe.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Roboto-Light.8be2d148.ttf",
+    "static/media/KudoCoin.99592593.png": "/static/media/KudoCoin.99592593.png",
+    "static/media/KudoCoinT1.7d3a4e14.png": "/static/media/KudoCoinT1.7d3a4e14.png",
+    "static/media/KudoCoinT2.913066ab.png": "/static/media/KudoCoinT2.913066ab.png",
     "static/media/SoundTown.cc538d6c.png": "/static/media/SoundTown.cc538d6c.png",
     "static/media/TeaTime.2456f140.png": "/static/media/TeaTime.2456f140.png",
+    "static/media/Tentacles_ 2.e7bbd24b.png": "/static/media/Tentacles_ 2.e7bbd24b.png",
+    "static/media/Tentacles_ 3.88d5b14b.png": "/static/media/Tentacles_ 3.88d5b14b.png",
     "static/media/anna.f7ae045b.png": "/static/media/anna.f7ae045b.png",
     "static/media/arrow.d8e5e186.gif": "/static/media/arrow.d8e5e186.gif",
     "static/media/dna.d60508a8.png": "/static/media/dna.d60508a8.png",
@@ -26,13 +31,14 @@
     "static/media/soundtownScreen2.060b586a.png": "/static/media/soundtownScreen2.060b586a.png",
     "static/media/teatimeIntro.b3f970a8.png": "/static/media/teatimeIntro.b3f970a8.png",
     "static/media/teatimeScreen.7af13e2d.png": "/static/media/teatimeScreen.7af13e2d.png",
-    "static/media/teatimeScreen2.98fe8417.png": "/static/media/teatimeScreen2.98fe8417.png"
+    "static/media/teatimeScreen2.98fe8417.png": "/static/media/teatimeScreen2.98fe8417.png",
+    "static/media/umami.93645e82.png": "/static/media/umami.93645e82.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b97d2c8a.js",
+    "static/js/runtime-main.18d6a07a.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.91d137ec.chunk.js",
-    "static/css/main.feb90fba.chunk.css",
-    "static/js/main.e6a6bb88.chunk.js"
+    "static/js/2.849fc5fe.chunk.js",
+    "static/css/main.ce3f2743.chunk.css",
+    "static/js/main.07e37e3b.chunk.js"
   ]
 }
