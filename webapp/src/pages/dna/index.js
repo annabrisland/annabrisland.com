@@ -11,7 +11,7 @@ export default function DNA() {
 
   return (
     <Row
-      className="App slide"
+      className="Appdna slidedna"
       style={{
         display: "flex",
         flexDirection: "row",

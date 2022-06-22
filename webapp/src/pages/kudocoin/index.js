@@ -1,8 +1,10 @@
 import { Typography, Row, Col, Image } from "antd";
 import "./index.css";
-import teatimeIntro from "../../images/teatimeIntro.png";
-import teatimeScreen from "../../images/teatimeScreen.png";
-import teatimeScreen2 from "../../images/teatimeScreen2.png";
+import KudoCoinIntro from "../../images/KudoCoin.png";
+import KudoCoinScreen from "../../images/KudoCoinT1.png";
+import KudoCoinScreen2 from "../../images/KudoCoinT2.png";
+import Tentacle1 from "../../images/Tentacles_ 3.png";
+import Tentacle2 from "../../images/Tentacles_ 2.png";
 import { useEffect } from "react";
 
 export default function TeaTime() {
@@ -14,7 +16,7 @@ export default function TeaTime() {
 
   return (
     <Row
-      className="AppTeatime slideTeatime"
+      className="Appkudocoin slidekudocoin"
       style={{
         display: "flex",
         flexDirection: "row",
@@ -22,49 +24,52 @@ export default function TeaTime() {
         paddingBottom: "5%",
       }}
     >
-      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+      <Col style={{ paddingLeft: "5%", paddingRight: "5%" }}>
         <Row justify="end">
           <Text
             style={{
-              color: "black",
+              color: "#ffffff",
               fontSize: 20,
               fontFamily: "Roboto-Light",
               marginBottom: 100,
             }}
           >
-            March 2021
+            November 2021
           </Text>
         </Row>
         <Row justify="center">
           <Title
             className="title"
             style={{
-              color: "black",
+              color: "#ffffff",
               fontSize: 70,
               fontFamily: "Araboto-Normal",
               marginBottom: 0,
             }}
           >
-            TeaTime
+            KudoCoin.
           </Title>
         </Row>
         <Row justify="center">
           <Text
             style={{
-              color: "black",
+              color: "#ffffff",
               fontSize: 20,
               fontFamily: "Araboto-Normal",
-              marginBottom: 100,
+              marginBottom: 0,
             }}
           >
-            UI Mobile Design
+            Illustration
           </Text>
         </Row>
-        <Row justify="center">
+        <Row justify="left"
+        style={{
+            backgroundColor: " ",
+        }}>
           <Image
-            width={"100%"}
-            src={teatimeIntro}
-            style={{ objectFit: "cover", marginBottom: 100 }}
+            width={"55%"}
+            src={KudoCoinScreen2}
+            style={{ objectFit: "cover", marginBottom: 100, marginLeft: -75}}
             preview={false}
           />
         </Row>
@@ -78,7 +83,7 @@ export default function TeaTime() {
               marginBottom: 30,
             }}
           >
-            Why did we make it?
+            What is KudoCoin?
           </Title>
         </Row>
         <Row justify="start">
@@ -88,13 +93,15 @@ export default function TeaTime() {
               fontSize: 20,
               fontFamily: "Araboto-Normal",
               marginBottom: 100,
-              width: "80%",
+              width: "60%",
             }}
           >
-            In this digital age, many people struggle with a lack of
-            face-to-face interaction, leaving a huge impact on their mental
-            health. TeaTime is a platform where users can communicate verbally
-            no matter where or when they are.
+            KudoCoin is an ERC20 token that serves its purpose as street cred for developers. 
+            When a user first links their Github handle to a wallet address, they have 0 KudoCoins (KCN). 
+            Every time they help a fellow colleague in real life, or a random stranger on the internet, 
+            the individual being helped may decide to award this user with a KCN. A coin is subtracted 
+            from the helped account to the account of the helper. In addition, a new coin is generated 
+            into the source faucet account.
           </Text>
         </Row>
 
@@ -129,15 +136,15 @@ export default function TeaTime() {
           </Text>
           <Image
             width={"50%"}
-            src={teatimeScreen2}
+            src={Tentacle1}
             style={{ objectFit: "contain", marginLeft: 100, overflow: 'visible' }}
             preview={false}
           />
         </Row>
-        <Row justify="center">
+        <Row justify="left">
           <Image
-            width={"100%"}
-            src={teatimeScreen}
+            width={"40%"}
+            src={Tentacle2}
             style={{ objectFit: "contain" }}
             preview={false}
           />

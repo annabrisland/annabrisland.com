@@ -7,6 +7,8 @@ import teatime from "../../images/TeaTime.png";
 import soundtown from "../../images/SoundTown.png";
 import fungi from "../../images/fungi.png";
 import dna from "../../images/dna.png";
+import umami from "../../images/umami.png";
+import kudocoin from "../../images/KudoCoin.png";
 import quote from "../../images/quote.png";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
@@ -72,7 +74,7 @@ export default function Home() {
               }}
             >
               Hello, my name is{" "}
-              <span style={{ color: "#DE641F", fontFamily: "Araboto-Normal" }}>
+              <span style={{ color: "#FF57A8", fontFamily: "Araboto-Normal" }}>
                 Anna
               </span>
               .
@@ -147,6 +149,20 @@ export default function Home() {
               width={"100%"}
               height={"100%"}
               src={soundtown}
+              style={{ objectFit: "cover" }}
+              preview={false}
+            />
+          </Row>
+          <Row
+            style={{ width: "100%", height: 200 }}
+            onClick={() => {
+              history.push("/umami/");
+            }}
+          >
+            <Image
+              width={"100%"}
+              height={"100%"}
+              src={umami}
               style={{ objectFit: "cover" }}
               preview={false}
             />
@@ -332,7 +348,7 @@ export default function Home() {
             }}
           >
             Hello, my name is{" "}
-            <span style={{ color: "#DE641F", fontFamily: "Araboto-Normal" }}>
+            <span style={{ color: "#FF57A8", fontFamily: "Araboto-Normal" }}>
               Anna
             </span>
             .
@@ -402,7 +418,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "All" ? "#DE641F" : "white",
+                color: projectSelected === "All" ? "#FF57A8" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
               }}
@@ -415,7 +431,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Design" ? "#DE641F" : "white",
+                color: projectSelected === "Design" ? "#FF57A8" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,
@@ -429,7 +445,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Biology" ? "#DE641F" : "white",
+                color: projectSelected === "Biology" ? "#FF57A8" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,

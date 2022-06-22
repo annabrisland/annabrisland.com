@@ -11,7 +11,7 @@ export default function Fungi() {
 
   return (
     <Row
-      className="App slide"
+      className="Appfungi slidefungi"
       style={{
         display: "flex",
         flexDirection: "row",

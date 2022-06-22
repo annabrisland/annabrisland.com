@@ -1,6 +1,6 @@
 @import "~antd/dist/antd.css";
 
-.Appdna {
+.AppUmami {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -16,7 +16,7 @@
   text-align: left;
   align-items: left;
   justify-content: flex-start;
-  background-color: #ffffff;
+  background-color: #000000;
   padding-left: 10%;
   padding-right: 10%;
   width: 100vw;
@@ -45,9 +45,10 @@
   color: gray;
 }
 
-.slidedna {
+.slideUmami {
   justify-content: center;
   height: 100vh;
+  background-color: #ffffff;
 }
 
 .semi-slide {

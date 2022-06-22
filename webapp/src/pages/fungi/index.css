@@ -1,12 +1,12 @@
 @import "~antd/dist/antd.css";
 
-.App {
+.Appfungi {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: left;
   justify-content: flex-start;
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100vw;
 }
 
@@ -45,9 +45,10 @@
   color: gray;
 }
 
-.slide {
+.slidefungi {
   justify-content: center;
   height: 100vh;
+  background-color: #ffffff;
 }
 
 .semi-slide {

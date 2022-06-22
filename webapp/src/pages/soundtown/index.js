@@ -14,7 +14,7 @@ export default function SoundTown() {
 
   return (
     <Row
-      className="App slide"
+      className="AppSoundtown slide"
       style={{
         display: "flex",
         flexDirection: "row",

@@ -1,6 +1,6 @@
 import { Typography, Row, Col, Image } from "antd";
 import "./index.css";
-import teatimeIntro from "../../images/teatimeIntro.png";
+import teatimeIntro from "../../images/umami.png";
 import teatimeScreen from "../../images/teatimeScreen.png";
 import teatimeScreen2 from "../../images/teatimeScreen2.png";
 import { useEffect } from "react";
@@ -14,7 +14,7 @@ export default function TeaTime() {
 
   return (
     <Row
-      className="AppTeatime slideTeatime"
+      className="AppUmami slideUmami"
       style={{
         display: "flex",
         flexDirection: "row",

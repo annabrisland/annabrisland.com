@@ -1,12 +1,12 @@
 @import "~antd/dist/antd.css";
 
-.App {
+.AppSoundtown {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: left;
   justify-content: flex-start;
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100vw;
 }
 
