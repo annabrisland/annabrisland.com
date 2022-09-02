@@ -5,9 +5,10 @@ import KudoCoinScreen from "../../images/KudoCoinT1.png";
 import KudoCoinScreen2 from "../../images/KudoCoinT2.png";
 import Tentacle1 from "../../images/Tentacles_ 3.png";
 import Tentacle2 from "../../images/Tentacles_ 2.png";
+import KudoCoinLogo from "../../images/kudocoinlogo.png";
 import { useEffect } from "react";
 
-export default function TeaTime() {
+export default function KudoCoin() {
   const { Title, Text } = Typography;
 
   useEffect(() => {
@@ -63,49 +64,73 @@ export default function TeaTime() {
           </Text>
         </Row>
         <Row justify="left"
-        style={{
+          style={{
             backgroundColor: " ",
-        }}>
+          }}>
           <Image
             width={"55%"}
             src={KudoCoinScreen2}
-            style={{ objectFit: "cover", marginBottom: 100, marginLeft: -75}}
+            style={{ objectFit: "cover", marginBottom: 100, marginLeft: -75 }}
             preview={false}
           />
         </Row>
-        <Row justify="start">
-          <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 30,
-            }}
-          >
-            What is KudoCoin?
-          </Title>
-        </Row>
-        <Row justify="start">
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 100,
-              width: "60%",
-            }}
-          >
-            KudoCoin is an ERC20 token that serves its purpose as street cred for developers. 
-            When a user first links their Github handle to a wallet address, they have 0 KudoCoins (KCN). 
-            Every time they help a fellow colleague in real life, or a random stranger on the internet, 
-            the individual being helped may decide to award this user with a KCN. A coin is subtracted 
-            from the helped account to the account of the helper. In addition, a new coin is generated 
-            into the source faucet account.
-          </Text>
+
+        <Row justify="space-between">
+          <Col style={{ flex: 1 }}>
+            <Row justify="start">
+              <Title
+                className="title"
+                style={{
+                  color: "black",
+                  fontSize: 50,
+                  fontFamily: "Araboto-Normal",
+                  marginBottom: 30,
+                }}
+              >
+                What is KudoCoin?
+              </Title>
+            </Row>
+            <Row justify="start">
+              <Text
+                style={{
+                  color: "black",
+                  fontSize: 20,
+                  fontFamily: "Araboto-Normal",
+                  marginBottom: 100,
+                  width: "100%",
+                }}
+              >
+                KudoCoin is an ERC20 token that serves its purpose as street cred for developers.
+                When a user first links their Github handle to a wallet address, they have 0 KudoCoins (KCN).
+                Every time they help a fellow colleague in real life, or a random stranger on the internet,
+                the individual being helped may decide to award this user with a KCN. A coin is subtracted
+                from the helped account to the account of the helper. In addition, a new coin is generated
+                into the source faucet account.
+              </Text>
+            </Row>
+          </Col>
+          <Col style={{ flex: 1 }}>
+            <Row justify="end">
+              <Image
+                width={"80%"}
+                src={Tentacle1}
+                style={{ objectFit: "contain", marginLeft: 100, overflow: 'visible' }}
+                preview={false}
+              />
+            </Row>
+          </Col>
         </Row>
 
-        <Row justify="start" align="bottom" style={{marginBottom: 100, marginTop: '-10%' }}>
+        <Row justify="center">
+          <Image
+            width={"80%"}
+            src={KudoCoinLogo}
+            style={{ objectFit: "contain", overflow: 'visible', marginTop: "-15%"}}
+            preview={false}
+          />
+        </Row>
+
+        <Row justify="start" align="bottom" style={{ marginBottom: 100, marginTop: '-10%' }}>
           <Text
             style={{
               color: "black",
@@ -115,15 +140,15 @@ export default function TeaTime() {
             }}
           >
             <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-            }}
-          >
-            What does it do?
-          </Title>
+              className="title"
+              style={{
+                color: "black",
+                fontSize: 50,
+                fontFamily: "Araboto-Normal",
+              }}
+            >
+              What does it do?
+            </Title>
             TeaTime generates exciting discussions by providing a selection of
             trending topics to consider. Beginning your conversation is as easy
             as selecting a story of interest and recording your thoughts.
@@ -134,12 +159,6 @@ export default function TeaTime() {
             listen to what others have to say as voice notes are locked to users
             before they have recorded themselves.
           </Text>
-          <Image
-            width={"50%"}
-            src={Tentacle1}
-            style={{ objectFit: "contain", marginLeft: 100, overflow: 'visible' }}
-            preview={false}
-          />
         </Row>
         <Row justify="left">
           <Image

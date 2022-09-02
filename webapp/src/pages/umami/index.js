@@ -1,11 +1,13 @@
 import { Typography, Row, Col, Image } from "antd";
 import "./index.css";
-import teatimeIntro from "../../images/umami.png";
+import umamiIntro from "../../images/umami.png";
+import lemon from "../../images/lemon.png";
+import umamiTitle from "../../images/umamiTitle.png";
 import teatimeScreen from "../../images/teatimeScreen.png";
 import teatimeScreen2 from "../../images/teatimeScreen2.png";
 import { useEffect } from "react";
 
-export default function TeaTime() {
+export default function Umami() {
   const { Title, Text } = Typography;
 
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function TeaTime() {
         paddingBottom: "5%",
       }}
     >
-      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+      <Col style={{ paddingLeft: "5%", paddingRight: "5%" }}>
         <Row justify="end">
           <Text
             style={{
@@ -32,38 +34,49 @@ export default function TeaTime() {
               marginBottom: 100,
             }}
           >
-            March 2021
+            April 2022
           </Text>
         </Row>
+
         <Row justify="center">
-          <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 70,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 0,
-            }}
-          >
-            TeaTime
-          </Title>
+          <Col style={{flex: 1}}>
+            <Image
+              width={"70%"}
+              src={lemon}
+              style={{ objectFit: "cover", marginBottom: 100 }}
+              preview={false}
+            />
+          </Col>
+          <Col style={{flex: 1, alignSelf: 'center'}}>
+            <Row justify="center">
+            <Image
+              width={"100%"}
+              src={umamiTitle}
+              style={{ objectFit: "cover", marginBottom: 30 }}
+              preview={false}
+            />
+            </Row>
+            <Row justify="center">
+              <Text
+                style={{
+                  color: "black",
+                  fontSize: 20,
+                  fontFamily: "Araboto-Normal",
+                  marginBottom: 100,
+                }}
+              >
+                UI Mobile App Design & Illustations
+              </Text>
+            </Row>
+          </Col>
+          <Col style={{flex: 1}}>
+          </Col>
         </Row>
-        <Row justify="center">
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 100,
-            }}
-          >
-            UI Mobile Design
-          </Text>
-        </Row>
-        <Row justify="center">
+
+        <Row justify="end">
           <Image
-            width={"100%"}
-            src={teatimeIntro}
+            width={"50%"}
+            src={umamiIntro}
             style={{ objectFit: "cover", marginBottom: 100 }}
             preview={false}
           />
@@ -98,7 +111,7 @@ export default function TeaTime() {
           </Text>
         </Row>
 
-        <Row justify="start" align="bottom" style={{marginBottom: 100, marginTop: '-10%' }}>
+        <Row justify="start" align="bottom" style={{ marginBottom: 100, marginTop: '-10%' }}>
           <Text
             style={{
               color: "black",
@@ -108,15 +121,15 @@ export default function TeaTime() {
             }}
           >
             <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-            }}
-          >
-            What does it do?
-          </Title>
+              className="title"
+              style={{
+                color: "black",
+                fontSize: 50,
+                fontFamily: "Araboto-Normal",
+              }}
+            >
+              What does it do?
+            </Title>
             TeaTime generates exciting discussions by providing a selection of
             trending topics to consider. Beginning your conversation is as easy
             as selecting a story of interest and recording your thoughts.

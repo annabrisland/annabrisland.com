@@ -1,4 +1,4 @@
-import { Typography, Row, Col, Button, Image, Space, Affix } from "antd";
+import { Typography, Row, Col, Image, Space, Affix } from "antd";
 import { useHistory } from "react-router-dom";
 import "./index.css";
 import anna from "../../images/anna.png";
@@ -12,6 +12,7 @@ import kudocoin from "../../images/KudoCoin.png";
 import quote from "../../images/quote.png";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
+import Header from '../../components/Header';
 
 let loveCount = 0;
 
@@ -294,43 +295,7 @@ export default function Home() {
             opacity: scrollPosition <= 400 || scrollPosition >= 2200 ? 1 : 0,
           }}
         >
-          <Row className="header" justify="end">
-            <Button
-              className="header-button"
-              type="link"
-              onClick={() => {
-                projectRef.current.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-              style={{ color: "white" }}
-            >
-              Projects
-            </Button>
-            <Button
-              className="header-button"
-              type="link"
-              onClick={() => {
-                aboutRef.current.scrollIntoView({ behavior: "smooth" });
-              }}
-              style={{ color: "white" }}
-            >
-              About Me
-            </Button>
-            <Button
-              className="header-button"
-              type="link"
-              onClick={() => {
-                window.open(
-                  "https://annabrisland.com/Anna_Brisland_Resume.pdf",
-                  "_blank"
-                );
-              }}
-              style={{ color: "white" }}
-            >
-              Resume
-            </Button>
-          </Row>
+          {Header(projectRef, aboutRef)}
         </Affix>
         <Row className="App-content intro-content">
           <Image
@@ -564,6 +529,60 @@ export default function Home() {
               preview={false}
             />
             {contentCardText("DNA Analysis", "#E93323")}
+          </Col>
+        </Col>
+        <Col
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            height: "50%",
+          }}
+        >
+          {/* <Title
+                  className="title rotated"
+                  style={{
+                    color: "#C4C4C4",
+                    fontSize: 40,
+                    fontFamily: "Araboto-Normal",
+                    alignSelf: "center",
+                    marginLeft: -150,
+                    marginTop: 0,
+                    position: "absolute",
+                  }}
+                >
+                  Design
+                </Title> */}
+          <Col
+            style={{ width: "50%", height: 500 }}
+            onClick={() => {
+              history.push("/umami/");
+            }}
+            hidden={projectSelected === "Biology"}
+          >
+            <Image
+              width={"100%"}
+              height={"100%"}
+              src={umami}
+              style={{ objectFit: "cover" }}
+              preview={false}
+            />
+            {contentCardText("Umami", "#447551")}
+          </Col>
+          <Col
+            style={{ width: "50%", height: 500 }}
+            onClick={() => {
+              history.push("/kudocoin/");
+            }}
+            hidden={projectSelected === "Biology"}
+          >
+            <Image
+              width={"100%"}
+              height={"100%"}
+              src={kudocoin}
+              style={{ objectFit: "cover" }}
+              preview={false}
+            />
+            {contentCardText("KudoCoin", "#1C2368")}
           </Col>
         </Col>
       </Row>

@@ -24,9 +24,8 @@
 
 .header {
   display: flex;
-  height: 5vh;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   width: 100vw;
 }
 
