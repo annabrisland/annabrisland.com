@@ -7,7 +7,7 @@ import teatime from "../../images/TeaTime.png";
 import soundtown from "../../images/SoundTown.png";
 import fungi from "../../images/fungi.png";
 import dna from "../../images/dna.png";
-import umami from "../../images/umami.png";
+import umami from "../../images/umamiThumb.png";
 import kudocoin from "../../images/KudoCoin.png";
 import quote from "../../images/quote.png";
 import { useMediaQuery } from "react-responsive";
@@ -447,34 +447,34 @@ export default function Home() {
           <Col
             style={{ width: "50%", height: 500 }}
             onClick={() => {
-              history.push("/teatime/");
+              history.push("/umami/");
             }}
             hidden={projectSelected === "Biology"}
           >
             <Image
               width={"100%"}
               height={"100%"}
-              src={teatime}
+              src={umami}
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("TeaTime", "#3A82FB")}
+            {contentCardText("Umami", "#447551")}
           </Col>
           <Col
             style={{ width: "50%", height: 500 }}
             onClick={() => {
-              history.push("/soundtown/");
+              history.push("/kudocoin/");
             }}
             hidden={projectSelected === "Biology"}
           >
             <Image
               width={"100%"}
               height={"100%"}
-              src={soundtown}
+              src={kudocoin}
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("SoundTown", "#63A857")}
+            {contentCardText("KudoCoin", "#1C2368")}
           </Col>
         </Col>
         <Col
@@ -512,7 +512,7 @@ export default function Home() {
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("RNA-Seq Read Processing", "#1B1B1B")}
+            {contentCardText("RNA-Seq Visualisation", "#1B1B1B")}
           </Col>
           <Col
             style={{ width: "50%", height: 500 }}
@@ -528,7 +528,7 @@ export default function Home() {
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("DNA Analysis", "#E93323")}
+            {contentCardText("RNA-Seq Read Processing", "#E93323")}
           </Col>
         </Col>
         <Col
@@ -555,34 +555,34 @@ export default function Home() {
           <Col
             style={{ width: "50%", height: 500 }}
             onClick={() => {
-              history.push("/umami/");
+              history.push("/teatime/");
             }}
             hidden={projectSelected === "Biology"}
           >
             <Image
               width={"100%"}
               height={"100%"}
-              src={umami}
+              src={teatime}
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("Umami", "#447551")}
+            {contentCardText("TeaTime", "#3A82FB")}
           </Col>
           <Col
             style={{ width: "50%", height: 500 }}
             onClick={() => {
-              history.push("/kudocoin/");
+              history.push("/soundtown/");
             }}
             hidden={projectSelected === "Biology"}
           >
             <Image
               width={"100%"}
               height={"100%"}
-              src={kudocoin}
+              src={soundtown}
               style={{ objectFit: "cover" }}
               preview={false}
             />
-            {contentCardText("KudoCoin", "#1C2368")}
+            {contentCardText("SoundTown", "#63A857")}
           </Col>
         </Col>
       </Row>

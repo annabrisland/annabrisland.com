@@ -19,7 +19,20 @@ export default function DNA() {
         paddingBottom: "5%",
       }}
     >
-      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+      
+      <Col style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+      <Row justify="end">
+        <Text
+            style={{
+              color: "black",
+              fontSize: 20,
+              fontFamily: "Roboto-Light",
+              marginBottom: 100,
+            }}
+          >
+            May 2021
+          </Text>
+        </Row>
         <Row justify="center">
           <Title
             className="title"
@@ -30,7 +43,7 @@ export default function DNA() {
               marginBottom: 0,
             }}
           >
-            DNA Analysis
+            RNA-Seq Read Processing
           </Title>
         </Row>
         <Row justify="center">

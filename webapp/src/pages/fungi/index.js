@@ -19,7 +19,7 @@ export default function Fungi() {
         paddingBottom: "5%",
       }}
     >
-      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+      <Col style={{ paddingLeft: "5%", paddingRight: "5%" }}>
         <Row justify="end">
         <Text
             style={{
@@ -29,7 +29,7 @@ export default function Fungi() {
               marginBottom: 100,
             }}
           >
-            May 2021
+            March 2022
           </Text>
         </Row>
         <Row justify="center">
@@ -42,7 +42,7 @@ export default function Fungi() {
               marginBottom: 0,
             }}
           >
-            RNA-Seq Read Processing
+            RNA-Seq Visualisation Tool
           </Title>
         </Row>
         <Row justify="center">
@@ -54,10 +54,10 @@ export default function Fungi() {
               marginBottom: 100,
             }}
           >
-            Bioinformatics
+            R Shiny App
           </Text>
         </Row>
-        <Row justify="center">
+        <Row justify="start">
           <Title
             className="title"
             style={{
@@ -76,15 +76,12 @@ export default function Fungi() {
               color: "black",
               fontSize: 20,
               fontFamily: "Araboto-Normal",
-              textAlign: "center",
+              textAlign: "start",
               marginBottom: 80,
             }}
           >
-            During my time in the Kronstad Lab, I have worked to increase
-            efficiency and automate the pipeline to process raw RNA-Seq data and
-            arrive at accurate quantifiable gene expression. From here, I worked
-            to improve the workflow to analyse differential gene expression and
-            finally automate gene set enrichment analysis.
+            Once RNA-Seq data has been processed, raw read counts and node tables can be overwhelming or difficult to gain insight from. Transforming this numerical data into visual representations allows for the depiction of general trends and a complete overview of the data. However, dealing with and plotting large datasets computationally can require practice and existing knowledge. When the person plotting the data is not the data collector, important and specific details may be overlooked. In these cases, it is ultimately easier to hand over control to the dataset owner to follow the desired direction or perform their exploratory analysis. By increasing the accessibility to RNA-Seq data, users can assess and investigate their data with ease and comparisons can be made across many datasets.
+
           </Text>
         </Row>
         <Row justify="start">

@@ -123,50 +123,44 @@ export default function KudoCoin() {
 
         <Row justify="center">
           <Image
-            width={"80%"}
+            width={"70%"}
             src={KudoCoinLogo}
-            style={{ objectFit: "contain", overflow: 'visible', marginTop: "-15%"}}
+            style={{ objectFit: "contain", overflow: 'visible', marginTop: "-15%" }}
             preview={false}
           />
         </Row>
 
-        <Row justify="start" align="bottom" style={{ marginBottom: 100, marginTop: '-10%' }}>
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              width: "50%",
-            }}
-          >
-            <Title
-              className="title"
+        <Row justify="start" >
+          <Col style={{ flex: 1 }}>
+            <Image
+              width={"60%"}
+              src={Tentacle2}
+              style={{ objectFit: "cover", marginBottom: -10 }}
+              preview={false}
+            />
+          </Col>
+          <Col style={{ flex: 1, alignSelf: "center" }}>
+            <Text
               style={{
                 color: "black",
-                fontSize: 50,
+                fontSize: 20,
                 fontFamily: "Araboto-Normal",
+                width: "100%",
               }}
             >
-              What does it do?
-            </Title>
-            TeaTime generates exciting discussions by providing a selection of
-            trending topics to consider. Beginning your conversation is as easy
-            as selecting a story of interest and recording your thoughts.
-            Friends and family can endorse your opinion by voting for the best
-            response and send it to the global page. Worldwide sharing makes it
-            simple to connect with like-minded individuals and further the
-            discussion. Everyone is encouraged to speak up and share before they
-            listen to what others have to say as voice notes are locked to users
-            before they have recorded themselves.
-          </Text>
-        </Row>
-        <Row justify="left">
-          <Image
-            width={"40%"}
-            src={Tentacle2}
-            style={{ objectFit: "contain" }}
-            preview={false}
-          />
+              <Title
+                className="title"
+                style={{
+                  color: "black",
+                  fontSize: 50,
+                  fontFamily: "Araboto-Normal",
+                }}
+              >
+                Our Vision
+              </Title>
+              For certain tech roles, some copanies report "bad hire" rates to be as high as 50%. With KCN, recruiters can view a candidate's balance and accurately gauge how impactful they are in the development community. No need for algorithm questions - hurray!
+            </Text>
+          </Col>
         </Row>
       </Col>
     </Row>
