@@ -1,7 +1,7 @@
 import { Typography, Row, Col, Image } from "antd";
 import { useEffect } from "react";
 import "./index.css";
-import KudoCoinScreen2 from "../../images/KudoCoinT2.png";
+import visualisation from "../../images/visualisation.png";
 
 export default function Fungi() {
   const { Title, Text } = Typography;
@@ -60,7 +60,7 @@ export default function Fungi() {
           </Row>
         </Row>
         <Row>
-          <Col style={{ flex: 1 }}>
+          <Col style={{ flex: 0.7}}>
             <Row justify="start">
               <Title
                 className="title"
@@ -84,7 +84,7 @@ export default function Fungi() {
                   marginBottom: 20,
                 }}
               >
-                Once RNA sequencing data has been processed, raw read counts and node tables can be overwhelming or difficult to gain insight from. Transforming this numerical data into visual representations allows for the depiction of general trends and a complete overview of the data. However, dealing with and plotting large datasets computationally can require practice and existing knowledge. When the person plotting the data is not the data collector, important and specific details may be overlooked. In these cases, it is ultimately easier to hand over control to the dataset owner to follow the desired direction or perform their exploratory analysis. By increasing the accessibility to RNA-Seq data, users can assess and investigate their data with ease and comparisons can be made across many datasets.
+                Once RNA sequencing data has been processed, raw read counts and node tables can be overwhelming or difficult to gain insight from. Transforming this numerical data into visual representations allows for the depiction of general trends and a complete overview of the data. However, dealing with and plotting large datasets computationally can require practice and existing knowledge.
 
               </Text>
             </Row>
@@ -95,20 +95,58 @@ export default function Fungi() {
                   fontSize: 20,
                   fontFamily: "Araboto-Normal",
                   textAlign: "start",
-                  marginBottom: 80,
+                  marginBottom: 20,
                 }}
               >
-                This application allows anyone to have the power to explore their RNA-Seq data. Once armed with their output files, the user has full reign to create tailored plots to uncover hidden meaning in their data.
+                When the person plotting the data is not the data collector, important and specific details may be overlooked. In these cases, it is ultimately easier to hand over control to the dataset owner to follow the desired direction or perform their exploratory analysis. By increasing the accessibility to RNA-Seq data, users can assess and investigate their data with ease and comparisons can be made across many datasets.
+
               </Text>
             </Row>
+            <Row justify="center">
+              <Text
+                style={{
+                  color: "black",
+                  fontSize: 20,
+                  fontFamily: "Araboto-Normal",
+                  textAlign: "start",
+                  marginBottom: 20,
+                }}
+              >
+                This application allows anyone to have the power to explore their RNA-Seq data. Once armed with their output files, the user has full reign to create tailored plots to uncover hidden meaning in their data. 
+              </Text>
+            </Row>
+            
           </Col>
-          <Col style={{ flex: 1 }}>
+          <Col style={{ flex: 1, alignSelf: "center", paddingLeft: "3%"}}>
             <Image
               width={"100%"}
-              src={KudoCoinScreen2}
-              style={{ objectFit: "cover" }}
+              src={visualisation}
+              style={{ objectFit: "cover", marginBottom: 20 }}
               preview={false}
             />
+            <Row justify="center">
+              <Text
+                style={{
+                  color: "black",
+                  fontSize: 20,
+                  fontFamily: "Araboto-Normal",
+                  textAlign: "start",
+                }}
+              >
+                Check the app out <Text
+                style={{
+                  color: "red",
+                  fontSize: 20,
+                  fontFamily: "Araboto-Normal",
+                  textAlign: "start",
+                }}
+                onClick={() => {
+                  window.open("https://cwjlee.shinyapps.io/RNASeq-app/", "_blank");
+                }}
+              >here.
+              </Text>
+              </Text>
+            </Row>
           </Col>
         </Row>
       </Col>
