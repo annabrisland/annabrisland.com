@@ -43,7 +43,7 @@ export default function DNA() {
               marginBottom: 0,
             }}
           >
-            RNA-Seq Read Processing
+            Building a RNA-Seq Pipeline
           </Title>
         </Row>
         <Row justify="center">
@@ -55,7 +55,7 @@ export default function DNA() {
               marginBottom: 100,
             }}
           >
-            In Progress
+            Computational Biology
           </Text>
         </Row>
         <Row justify="center">
@@ -66,7 +66,8 @@ export default function DNA() {
               fontFamily: "Araboto-Normal",
             }}
           >
-            I'm currently working hard on this. Check back later for updates!
+            Sequencing of RNA samples allows us to gain insight into the transcriptome and transcriptional changes between conditions. With this new knowledge, it is easier to target specific genes of interest for further analysis. However, after most next-generation sequencing techniques, raw data needs to be preprocessed before drawing any biological conclusions. We have developed and implemented the following RNA-Seq processing pipeline to return the most valuable data.
+
           </Text>
         </Row>
       </Col>
