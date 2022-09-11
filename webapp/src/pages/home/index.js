@@ -313,7 +313,7 @@ export default function Home() {
             }}
           >
             Hello, my name is{" "}
-            <span style={{ color: "#FF57A8", fontFamily: "Araboto-Normal" }}>
+            <span style={{ color: "#FCFF5F", fontFamily: "Araboto-Normal" }}>
               Anna
             </span>
             .
@@ -383,7 +383,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "All" ? "#FF57A8" : "white",
+                color: projectSelected === "All" ? "#FCFF5F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
               }}
@@ -396,7 +396,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Design" ? "#FF57A8" : "white",
+                color: projectSelected === "Design" ? "#FCFF5F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,
@@ -410,7 +410,7 @@ export default function Home() {
             <Text
               className="button"
               style={{
-                color: projectSelected === "Biology" ? "#FF57A8" : "white",
+                color: projectSelected === "Biology" ? "#FCFF5F" : "white",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
                 marginLeft: 100,

@@ -16,16 +16,15 @@ export default function Fungi() {
       style={{
         display: "flex",
         flexDirection: "row",
-        paddingTop: "5%",
         paddingBottom: "5%",
       }}
     >
-      <Col style={{ paddingLeft: "5%", paddingRight: "5%" }}>
-        <Row style={{ flexDirection: 'column', height: '100vh', alignSelf: 'center' }}>
+      <Col>
+        <Row style={{ flexDirection: 'column', height: '100vh', alignSelf: 'center', backgroundColor: "#674FA7", paddingTop: "5%", paddingLeft: "5%", paddingRight: "5%"}}>
           <Row justify="end">
             <Text
               style={{
-                color: "black",
+                color: "#FFFFFF",
                 fontSize: 20,
                 fontFamily: "Roboto-Light",
                 marginBottom: 100,
@@ -38,7 +37,7 @@ export default function Fungi() {
             <Title
               className="title"
               style={{
-                color: "black",
+                color: "#FFFFFF",
                 fontSize: 70,
                 fontFamily: "Araboto-Normal",
                 marginBottom: 0,
@@ -50,7 +49,7 @@ export default function Fungi() {
           <Row justify="center">
             <Text
               style={{
-                color: "black",
+                color: "#FFFFFF",
                 fontSize: 20,
                 fontFamily: "Araboto-Normal",
               }}
@@ -59,8 +58,8 @@ export default function Fungi() {
             </Text>
           </Row>
         </Row>
-        <Row>
-          <Col style={{ flex: 0.7}}>
+        <Row style={{paddingLeft: "5%", paddingRight: "5%", paddingTop: "5%", paddingBottom: "2%"}}>
+          <Col style={{ flex: 0.8, }}>
             <Row justify="start">
               <Title
                 className="title"
