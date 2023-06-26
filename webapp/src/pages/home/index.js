@@ -4,15 +4,23 @@ import "./index.css";
 import anna from "../../images/anna.png";
 import arrow from "../../images/arrow.gif";
 import teatime from "../../images/TeaTime.png";
+import teatimeThumb from "../../images/teaTimeThumb.png";
 import soundtown from "../../images/SoundTown.png";
 import fungi from "../../images/fungi.png";
 import dna from "../../images/dna.png";
-import umami from "../../images/umamiThumb.png";
-import kudocoin from "../../images/KudoCoin.png";
+import umamiThumb from "../../images/umamiThumb.png";
+import umami from "../../images/umamiTitle.png";
+import delve from "../../images/delve.png";
+import delveThumb from "../../images/delveThumb.png";
+import labby from "../../images/labby.png";
+import labbyThumbnail from "../../images/labbyThumbnail.png";
+import kudoCoinThumb from "../../images/kudoCoinThumb.png";
+import goWhite from "../../images/goArrowWhite.png";
+import goBlack from "../../images/goArrowBlack.png";
 import quote from "../../images/quote.png";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
-import Header from '../../components/Header';
+import Header from "../../components/Header";
 
 let loveCount = 0;
 
@@ -24,7 +32,6 @@ export default function Home() {
   const aboutRef = useRef();
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [projectSelected, setProjectSelected] = useState("All");
 
   useEffect(() => {
     const onScroll = (e) => {
@@ -34,270 +41,59 @@ export default function Home() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollPosition]);
 
-  function contentCardText(text, color) {
+  function contentCard(light, logo, text, color, image, pushTo) {
     return (
-      <Text
-        className="work-card"
+      <div
+        className={isMobile ? "project-card-mobile" : "project-card"}
+        onClick={() => {
+          history.push(pushTo);
+        }}
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          height: "100%",
-          width: "100%",
-          color: "white",
-          background: color,
-          fontFamily: "Araboto-Medium",
-          fontSize: 40,
+          backgroundColor: color,
+          outline: color === "#FFFFFF" ? "2px solid #000000" : "none",
         }}
       >
-        {text}
-      </Text>
-    );
-  }
-
-  if (isMobile) {
-    return (
-      <Space className="App" size={"large"} align="start">
-        <Row className="slide">
-          <Row className="App-content intro-content">
-            <Image
-              width={150}
-              src={anna}
-              preview={false}
-              style={{ marginBottom: 30 }}
-            />
-            <Title
-              className="title"
-              style={{
-                color: "white",
-                fontSize: 70,
-                fontFamily: "Araboto-Normal",
-              }}
-            >
-              Hello, my name is{" "}
-              <span style={{ color: "#FF57A8", fontFamily: "Araboto-Normal" }}>
-                Anna
-              </span>
-              .
-            </Title>
-            <Title
-              className="title"
-              style={{
-                color: "white",
-                marginTop: -30,
-                fontSize: 42,
-                fontFamily: "Araboto-Light",
-              }}
-              level={3}
-            >
-              Biologist by day, designer by night.
-            </Title>
-          </Row>
-          <Row
-            className="arrow fade"
-            align="middle"
-            justify="center"
-            style={{ opacity: scrollPosition <= 200 ? 1 : 0 }}
-          >
-            <Image width={100} src={arrow} preview={false} />
-          </Row>
-        </Row>
-        <Row className="App" ref={projectRef}>
-          <Col
-            style={{
-              marginLeft: "10%",
-              marginRight: "10%",
-              marginTop: 100,
-              marginBottom: 100,
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <Text
-              className="title"
-              style={{
-                color: "white",
-                fontSize: 50,
-                fontFamily: "Araboto-Bold",
-                flex: 1.5,
-              }}
-            >
-              Projects
-            </Text>
-          </Col>
-          <Row
-            style={{ width: "100%", height: 200 }}
-            onClick={() => {
-              history.push("/teatime/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={teatime}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-          </Row>
-          <Row
-            style={{ width: "100%", height: 200 }}
-            onClick={() => {
-              history.push("/soundtown/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={soundtown}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-          </Row>
-          <Row
-            style={{ width: "100%", height: 200 }}
-            onClick={() => {
-              history.push("/umami/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={umami}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-          </Row>
-          <Row
-            style={{ width: "100%", height: 200 }}
-            onClick={() => {
-              history.push("/fungi/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={fungi}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-          </Row>
-          <Row
-            style={{ width: "100%", height: 200 }}
-            onClick={() => {
-              history.push("/dna/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={dna}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-          </Row>
-        </Row>
-        <Row className="App-content slide" ref={aboutRef}>
-          <Col>
-            <Title
-              className="title"
-              style={{
-                color: "white",
-                fontSize: 50,
-                fontFamily: "Araboto-Normal",
-              }}
-            >
-              About Me
-            </Title>
-            <Row
-              style={{
-                marginBottom: 10,
-              }}
-              justify="space-between"
-            >
-              <Row
-                style={{
-                  flex: 1,
-                  flexDirection: "column",
-                  justifyContent: "center",
-                }}
-              >
-                <Image
-                  width={50}
-                  src={quote}
-                  style={{ objectFit: "contain", marginBottom: 30 }}
-                  preview={false}
-                />
-                <Text
-                  style={{
-                    color: "white",
-                    fontSize: 25,
-                    fontFamily: "Araboto-Bold",
-                    width: "50%",
-                  }}
-                >
-                  Good scientists can be expected to do good science, but great
-                  contributions to mankind require interdisciplinarity and
-                  collaboration.
-                </Text>
-                <Text
-                  style={{
-                    color: "white",
-                    fontSize: 15,
-                    fontFamily: "Araboto-Light",
-                    width: "50%",
-                    marginTop: 30,
-                  }}
-                >
-                  Douglas G. Kilburn
-                </Text>
-              </Row>
-              <Row
-                style={{
-                  flex: 1,
-                }}
-                justify="end"
-                align="bottom"
-              >
-                <Text
-                  style={{
-                    color: "white",
-                    fontSize: 35,
-                    fontFamily: "Araboto-Normal",
-                    width: "100%",
-                  }}
-                >
-                  As a scientist and self-taught designer, I love crafting
-                  creative solutions to overcome both biological and
-                  design-related obstacles. I firmly believe that the best way
-                  to teach and relay information to others is through effective
-                  visualisation and great user experience. Whether it be a
-                  powerful graph or a bold user interface, I hope to manifest my
-                  enthusiasm for the topic in the viewer through my
-                  presentation.
-                </Text>
-              </Row>
-            </Row>
-          </Col>
-        </Row>
-      </Space>
+        <div
+          className={
+            isMobile ? "project-card-header-mobile" : "project-card-header"
+          }
+        >
+          {logo}
+          <img
+            src={light ? goWhite : goBlack}
+            className={isMobile ? "go-image-mobile" : "go-image"}
+            alt="Go"
+          />
+        </div>
+        <p
+          className={
+            isMobile ? "project-card-desc-mobile" : "project-card-desc"
+          }
+          style={{
+            color: light ? "#FFFFFF" : "#000000",
+          }}
+        >
+          {text}
+        </p>
+        <img src={image} className="work-image" alt="Logo" />
+      </div>
     );
   }
 
   return (
-    <Space className="App" size={"large"} align="start">
-      <Row className="slide">
+    <div className="App">
+      <div className="anna-intro">
         <Affix
           className="fade"
           offsetTop={50}
           style={{
             position: "absolute",
-            opacity: scrollPosition <= 400 || scrollPosition >= 2200 ? 1 : 0,
+            opacity: scrollPosition <= 400 ? 1 : 0,
           }}
         >
           {Header(projectRef, aboutRef)}
         </Affix>
-        <Row className="App-content intro-content">
+        <div className="intro-content">
           <Image
             width={150}
             src={anna}
@@ -307,314 +103,104 @@ export default function Home() {
           <Title
             className="title"
             style={{
-              color: "white",
-              fontSize: 70,
+              color: "black",
+              fontSize: isMobile ? "5vw" : "3vw",
               fontFamily: "Araboto-Normal",
             }}
           >
-            Hello, my name is{" "}
-            <span style={{ color: "#FCFF5F", fontFamily: "Araboto-Normal" }}>
-              Anna
-            </span>
-            .
+            Hi, I'm Anna.
           </Title>
           <Title
             className="title"
             style={{
-              color: "white",
-              marginTop: -30,
-              fontSize: 42,
+              color: "black",
+              marginTop: -10,
+              fontSize: isMobile ? "3vw" : "1.8vw",
               fontFamily: "Araboto-Light",
             }}
             level={3}
           >
             Biologist by day, designer by night.
           </Title>
-        </Row>
-        <Row
-          className="arrow fade"
-          align="middle"
-          justify="center"
-          style={{ opacity: scrollPosition <= 200 ? 1 : 0 }}
-        >
-          <Image
-            width={100}
-            src={arrow}
-            preview={false}
-            onClick={() => {
-              projectRef.current.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-          />
-        </Row>
-      </Row>
-      <Row className="App" ref={projectRef}>
-        <Col
-          style={{
-            marginLeft: "10%",
-            marginRight: "10%",
-            marginTop: 100,
-            marginBottom: 100,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <Text
-            className="title"
-            style={{
-              color: "white",
-              fontSize: 50,
-              fontFamily: "Araboto-Bold",
-              flex: 1.5,
-            }}
-          >
-            Projects
-          </Text>
-          <Col
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "flex-end",
-              flex: 1,
-            }}
-          >
-            <Text
-              className="button"
-              style={{
-                color: projectSelected === "All" ? "#FCFF5F" : "white",
-                fontSize: 20,
-                fontFamily: "Araboto-Normal",
-              }}
-              onClick={() => {
-                setProjectSelected("All");
-              }}
+        </div>
+      </div>
+      <div className="App" ref={projectRef}>
+        <div className="project-row">
+          {contentCard(
+            true,
+            <img src={labby} className="work-logo" alt="Labby Logo" />,
+            "Lab management software for BC Cancer",
+            "#4E62C7",
+            labbyThumbnail,
+            "/umami/"
+          )}
+          {contentCard(
+            false,
+            <img src={umami} className="work-logo" alt="Umami Logo" />,
+            "Recipe sharing platform",
+            "#FFFFFF",
+            umamiThumb,
+            "/umami/"
+          )}
+          {contentCard(
+            false,
+            <div
+              className={isMobile ? "work-logo-text-mobile" : "work-logo-text"}
             >
-              All
-            </Text>
-            <Text
-              className="button"
-              style={{
-                color: projectSelected === "Design" ? "#FCFF5F" : "white",
-                fontSize: 20,
-                fontFamily: "Araboto-Normal",
-                marginLeft: 100,
-              }}
-              onClick={() => {
-                setProjectSelected("Design");
-              }}
+              KudoCoin
+            </div>,
+            "Street cred for developers",
+            "#FFFFFF",
+            kudoCoinThumb,
+            "/umami/"
+          )}
+          {contentCard(
+            true,
+            <img src={delve} className="work-logo" alt="Delve Logo" />,
+            "Platform to connect Researchers and Volunteers",
+            "#70BA94",
+            delveThumb,
+            "/umami/"
+          )}
+          {contentCard(
+            true,
+            <div
+              className={isMobile ? "work-logo-text-mobile" : "work-logo-text"}
+              style={{ color: "white" }}
             >
-              Design
-            </Text>
-            <Text
-              className="button"
-              style={{
-                color: projectSelected === "Biology" ? "#FCFF5F" : "white",
-                fontSize: 20,
-                fontFamily: "Araboto-Normal",
-                marginLeft: 100,
-              }}
-              onClick={() => {
-                setProjectSelected("Biology");
-              }}
-            >
-              Biology
-            </Text>
-          </Col>
-        </Col>
-        <Col
+              TeaTime
+            </div>,
+            "Social media for discussion of current events",
+            "#3A82FC",
+            teatimeThumb,
+            "/umami/"
+          )}
+        </div>
+      </div>
+      <div className="anna-about-me" ref={aboutRef}>
+        <Title
+          className="title"
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            height: "50%",
+            color: "black",
+            fontSize: isMobile ? "5vw" : "3vw",
+            fontFamily: "Araboto-Normal",
           }}
         >
-          {/* <Title
-                  className="title rotated"
-                  style={{
-                    color: "#C4C4C4",
-                    fontSize: 40,
-                    fontFamily: "Araboto-Normal",
-                    alignSelf: "center",
-                    marginLeft: -150,
-                    marginTop: 0,
-                    position: "absolute",
-                  }}
-                >
-                  Design
-                </Title> */}
-          <Col
-            style={{ width: "50%", height: 500 }}
-            onClick={() => {
-              history.push("/umami/");
-            }}
-            hidden={projectSelected === "Biology"}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={umami}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("Umami", "#447551")}
-          </Col>
-          <Col
-            style={{ width: "50%", height: 500 }}
-            onClick={() => {
-              history.push("/kudocoin/");
-            }}
-            hidden={projectSelected === "Biology"}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={kudocoin}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("KudoCoin", "#1C2368")}
-          </Col>
-        </Col>
-        <Col
+          About Me
+        </Title>
+        <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            height: "50%",
-          }}
-        >
-          {/* <Title
-                  className="title rotated"
-                  style={{
-                    color: "#C4C4C4",
-                    fontSize: 40,
-                    fontFamily: "Araboto-Normal",
-                    alignSelf: "center",
-                    marginLeft: -150,
-                    marginTop: 0,
-                    position: "absolute",
-                  }}
-                >
-                  Biology
-                </Title> */}
-          <Col
-            style={{ width: "50%", height: 500 }}
-            hidden={projectSelected === "Design"}
-            onClick={() => {
-              history.push("/fungi/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={fungi}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("RNA-Seq Visualisation", "#1B1B1B")}
-          </Col>
-          <Col
-            style={{ width: "50%", height: 500 }}
-            hidden={projectSelected === "Design"}
-            onClick={() => {
-              history.push("/dna/");
-            }}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={dna}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("RNA-Seq Read Processing", "#E93323")}
-          </Col>
-        </Col>
-        <Col
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            height: "50%",
-          }}
-        >
-          {/* <Title
-                  className="title rotated"
-                  style={{
-                    color: "#C4C4C4",
-                    fontSize: 40,
-                    fontFamily: "Araboto-Normal",
-                    alignSelf: "center",
-                    marginLeft: -150,
-                    marginTop: 0,
-                    position: "absolute",
-                  }}
-                >
-                  Design
-                </Title> */}
-          <Col
-            style={{ width: "50%", height: 500 }}
-            onClick={() => {
-              history.push("/teatime/");
-            }}
-            hidden={projectSelected === "Biology"}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={teatime}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("TeaTime", "#3A82FB")}
-          </Col>
-          <Col
-            style={{ width: "50%", height: 500 }}
-            onClick={() => {
-              history.push("/soundtown/");
-            }}
-            hidden={projectSelected === "Biology"}
-          >
-            <Image
-              width={"100%"}
-              height={"100%"}
-              src={soundtown}
-              style={{ objectFit: "cover" }}
-              preview={false}
-            />
-            {contentCardText("SoundTown", "#63A857")}
-          </Col>
-        </Col>
-      </Row>
-      <Row
-        className="App-content slide"
-        ref={aboutRef}
-        style={{ flexDirection: "row", display: "flex" }}
-      >
-        <Row style={{ width: "100%" }} align="bottom">
-          <Title
-            className="title"
-            style={{
-              color: "white",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-            }}
-          >
-            About Me
-          </Title>
-        </Row>
-        <Row
-          style={{
             marginBottom: 10,
+            flexWrap: "wrap",
           }}
-          justify="space-between"
-          align="middle"
         >
-          <Row
+          <div
             style={{
-              flex: 1,
+              width: "40vw",
+              display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "center"
             }}
           >
             <Image
@@ -625,10 +211,11 @@ export default function Home() {
             />
             <Text
               style={{
-                color: "white",
-                fontSize: 25,
+                color: "black",
+                fontSize: isMobile ? "3vw" : "1.8vw",
                 fontFamily: "Araboto-Bold",
-                width: "50%",
+                width: "70%",
+                textAlign: "left",
               }}
             >
               Good scientists can be expected to do good science, but great
@@ -637,36 +224,35 @@ export default function Home() {
             </Text>
             <Text
               style={{
-                color: "white",
-                fontSize: 15,
+                color: "black",
+                fontSize: isMobile ? "2vw" : "1.2vw",
                 fontFamily: "Araboto-Light",
                 width: "50%",
                 marginTop: 30,
+                textAlign: "left",
               }}
             >
               Douglas G. Kilburn
             </Text>
-          </Row>
-          <Row
+          </div>
+          <div
             style={{
-              flex: 1,
+              display: "flex",
+              width: "40vw"
             }}
-            justify="end"
-            align="bottom"
           >
             <Text
               style={{
-                color: "white",
-                fontSize: 33,
+                color: "black",
+                fontSize: isMobile ? "3vw" : "1.8vw",
                 fontFamily: "Araboto-Normal",
                 width: "100%",
-                marginBottom: 50,
               }}
             >
               As a scientist and self-taught designer, I{" "}
               <Text
                 style={{
-                  color: "white",
+                  color: "black",
                 }}
                 onClick={() => {
                   if (loveCount >= 2) {
@@ -686,9 +272,9 @@ export default function Home() {
               graph or a bold user interface, I hope to manifest my enthusiasm
               for the topic in the viewer through my presentation.
             </Text>
-          </Row>
-        </Row>
-      </Row>
-    </Space>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

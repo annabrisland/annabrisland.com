@@ -6,20 +6,138 @@
   text-align: left;
   align-items: left;
   justify-content: flex-start;
-  background-color: #000000;
+  background-color: white;
   width: 100vw;
 }
 
-.App-content {
+.anna-intro {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+.intro-content {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: left;
   justify-content: flex-start;
-  background-color: #000000;
   padding-left: 10%;
   padding-right: 10%;
   width: 100vw;
+}
+
+.anna-about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100vw;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 2vw;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 39vw;
+  height: 39vw;
+  margin-bottom: 2vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.project-card-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vw;
+  margin-bottom: 2vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.project-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 6vw;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.project-card-header-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 12vw;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.project-card-desc {
+  color: white;
+  font-size: 1.4vw;
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.project-card-desc-mobile {
+  color: white;
+  font-size: 2.8vw;
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.go-image {
+  width: 3vw;
+  height: 3vw;
+}
+
+.go-image-mobile {
+  width: 6vw;
+  height: 6vw;
+}
+
+.work-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-logo {
+  height: 100%;
+  object-fit: contain;
+}
+
+.work-logo-text {
+  height: 100%;
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+
+.work-logo-text-mobile {
+  height: 100%;
+  font-size: 3.6vw;
+  font-weight: 700;
 }
 
 .header {
@@ -48,16 +166,10 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
 }
 
 .semi-slide {
   justify-content: center;
-}
-
-.intro-content {
-  justify-content: center;
-  height: 85vh;
 }
 
 .arrow {
