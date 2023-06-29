@@ -1,13 +1,8 @@
-import { Typography, Row, Col, Image, Space, Affix } from "antd";
+import { Typography, Image, Affix } from "antd";
 import { useHistory } from "react-router-dom";
 import "./index.css";
 import anna from "../../images/anna.png";
-import arrow from "../../images/arrow.gif";
-import teatime from "../../images/TeaTime.png";
 import teatimeThumb from "../../images/teaTimeThumb.png";
-import soundtown from "../../images/SoundTown.png";
-import fungi from "../../images/fungi.png";
-import dna from "../../images/dna.png";
 import umamiThumb from "../../images/umamiThumb.png";
 import umami from "../../images/umamiTitle.png";
 import delve from "../../images/delve.png";
@@ -82,16 +77,16 @@ export default function Home() {
 
   return (
     <div className="App">
-      <div className="anna-intro">
+      <div className={isMobile ? "anna-intro-mobile" : "anna-intro"}>
         <Affix
           className="fade"
           offsetTop={50}
           style={{
             position: "absolute",
-            opacity: scrollPosition <= 400 ? 1 : 0,
+            opacity: scrollPosition <= (isMobile ? 100 : 400) ? 1 : 0,
           }}
         >
-          {Header(projectRef, aboutRef)}
+          {Header(projectRef, aboutRef, isMobile)}
         </Affix>
         <div className="intro-content">
           <Image
@@ -115,7 +110,7 @@ export default function Home() {
             style={{
               color: "black",
               marginTop: -10,
-              fontSize: isMobile ? "3vw" : "1.8vw",
+              fontSize: isMobile ? "3vw" : "2vw",
               fontFamily: "Araboto-Light",
             }}
             level={3}
@@ -124,7 +119,7 @@ export default function Home() {
           </Title>
         </div>
       </div>
-      <div className="App" ref={projectRef}>
+      <div className="Projects" ref={projectRef}>
         <div className="project-row">
           {contentCard(
             true,
@@ -152,7 +147,7 @@ export default function Home() {
             "Street cred for developers",
             "#FFFFFF",
             kudoCoinThumb,
-            "/umami/"
+            "/kudocoin/"
           )}
           {contentCard(
             true,
@@ -200,7 +195,7 @@ export default function Home() {
               width: "40vw",
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center"
+              justifyContent: "center",
             }}
           >
             <Image
@@ -212,7 +207,7 @@ export default function Home() {
             <Text
               style={{
                 color: "black",
-                fontSize: isMobile ? "3vw" : "1.8vw",
+                fontSize: isMobile ? "3vw" : "2vw",
                 fontFamily: "Araboto-Bold",
                 width: "70%",
                 textAlign: "left",
@@ -238,13 +233,13 @@ export default function Home() {
           <div
             style={{
               display: "flex",
-              width: "40vw"
+              width: "40vw",
             }}
           >
             <Text
               style={{
                 color: "black",
-                fontSize: isMobile ? "3vw" : "1.8vw",
+                fontSize: isMobile ? "3vw" : "2vw",
                 fontFamily: "Araboto-Normal",
                 width: "100%",
               }}

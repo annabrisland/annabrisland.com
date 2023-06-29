@@ -1,20 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserView, MobileView } from "react-device-detect";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserView>
-      <App />
-    </BrowserView>
-    <MobileView>
-      <h3 style={{ color: "black", margin: 20, textAlign: "center" }}>
-        This site does not support mobile view yet, please visit on a desktop!
-      </h3>
-    </MobileView>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

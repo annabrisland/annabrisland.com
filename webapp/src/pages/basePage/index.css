@@ -1,0 +1,74 @@
+.pageHeader {
+  margin-top: 50px;
+}
+
+.introImage{
+  width: 100vw;
+  height: 85vh;
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.introImageMobile{
+  width: 100vw;
+  height: 40vh;
+  margin-top: 50px;
+  object-fit: contain;
+}
+
+.sectionView {
+  margin-bottom: 80px;
+}
+
+.contentView {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contentRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.fullColumn {
+  width: 100%;
+}
+
+.titleColumn {
+  width: 20%;
+}
+
+.contentColumn {
+  width: 80%;
+}
+
+.titleText {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitleText {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detailText {
+  font-size: 18px;
+}
+
+.focusBox {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 3%;
+}
+
+.imageBox {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+

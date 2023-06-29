@@ -1,7 +1,34 @@
 import { Row, Button } from "antd";
 import logo from "../images/logo.png";
+import { useHistory } from "react-router-dom";
 
-export default function Header(projectRef, aboutRef) {
+export default function Header(projectRef, aboutRef, isMobile) {
+  const history = useHistory();
+
+  if (isMobile) {
+    return (
+      <Row className="header" justify="space-evenly">
+        <Row style={{ flex: 1 }} />
+        <img src={logo} style={{ width: 45, height: 45 }} alt="logo" />
+        <Row style={{ flex: 1 }} justify="end">
+          <Button
+            className="header-button"
+            type="link"
+            onClick={() => {
+              window.open(
+                "https://annabrisland.com/Anna_Brisland_Resume.pdf",
+                "_blank"
+              );
+            }}
+            style={{ color: "black" }}
+          >
+            Resume
+          </Button>
+        </Row>
+      </Row>
+    );
+  }
+
   return (
     <Row className="header" justify="space-between">
       <img src={logo} style={{ width: 45, height: 45 }} alt="logo" />
@@ -10,9 +37,13 @@ export default function Header(projectRef, aboutRef) {
           className="header-button"
           type="link"
           onClick={() => {
-            projectRef.current.scrollIntoView({
-              behavior: "smooth",
-            });
+            if (projectRef) {
+              projectRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            } else {
+              history.push("/");
+            }
           }}
           style={{ color: "black" }}
         >
@@ -22,7 +53,11 @@ export default function Header(projectRef, aboutRef) {
           className="header-button"
           type="link"
           onClick={() => {
-            aboutRef.current.scrollIntoView({ behavior: "smooth" });
+            if (aboutRef) {
+              aboutRef.current.scrollIntoView({ behavior: "smooth" });
+            } else {
+              history.push("/");
+            }
           }}
           style={{ color: "black" }}
         >
