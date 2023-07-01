@@ -127,7 +127,7 @@ export default function Home() {
             "Lab management software for BC Cancer",
             "#4E62C7",
             labbyThumbnail,
-            "/umami/"
+            "/labby/"
           )}
           {contentCard(
             false,
@@ -155,7 +155,7 @@ export default function Home() {
             "Platform to connect Researchers and Volunteers",
             "#70BA94",
             delveThumb,
-            "/umami/"
+            "/delve/"
           )}
           {contentCard(
             true,
@@ -168,7 +168,7 @@ export default function Home() {
             "Social media for discussion of current events",
             "#3A82FC",
             teatimeThumb,
-            "/umami/"
+            "/teatime/"
           )}
         </div>
       </div>
