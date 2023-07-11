@@ -95,5 +95,5 @@ export default function KudoCoin() {
     },
   ];
 
-  return <div>{BasePage(KudoCoinIntro, content)}</div>;
+  return <div>{BasePage(KudoCoinIntro, "#000000", content)}</div>;
 }

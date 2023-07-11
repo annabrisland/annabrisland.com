@@ -15,44 +15,31 @@ export default function Umami() {
 
   const content = [
     {
-      title: "Details",
+      title: "Umami",
       details: [
         {
-          type: "subtitle",
-          details: "My Role",
-        },
-        {
-          type: "text",
-          details: "UI/UX Designer & Illustrator",
-        },
-        {
-          type: "subtitle",
-          details: "For What?",
-        },
-        {
-          type: "text",
-          details: "UBC Launchpad",
-        },
+          type: "intro",
+          details: {
+            title: "Umami",
+            subtitle: "Your sharable digital cookbook.",
+            text: "Users can track their pantries, upload their own recipes, and follow their favourite recipe creators to stay on top of the best delicious creations.",
+            myRole: "UI/UX Designer & Illustrator",
+            timeline: "UBC Launchpad - 8 months",
+          },
+        }
       ],
     },
     {
-      title: "Overview",
+      title: "Problem",
       details: [
         {
           type: "subtitle",
-          details: "What is Umami?",
+          details: "There is no central hub to maintain a digital recipe collection, leaving users unable to find what they want.",
         },
         {
           type: "text",
           details:
             "Umami is a healthy recipe sharing app that allows users to search for the perfect recipe. Users can also upload their own recipes and even follow their favourite recipe creators to stay on top of the best delicious creations. It also allows home-chefs to keep track of their fridge and pantries so they can make the most of the ingredients they already have!",
-        },
-        {
-          type: "focus",
-          details: {
-            title: "",
-            text: "71% of people have “gone digital” when looking for a recipe.",
-          },
         },
         {
           type: "image",
@@ -61,20 +48,35 @@ export default function Umami() {
       ],
     },
     {
-      title: "Research Plan",
+      title: "Solution",
       details: [
+        {
+          type: "subtitle",
+          details: "Allow users to upload and network their own recipes",
+        },
         {
           type: "text",
           details:
-            "We completed user interviews and usability testing to make sure Umami hit all the right points.",
+            "Users should be able to maintain their own recipe collection without searching through long browser bookmarks or making a trip cross-platform.",
         },
         {
-          type: "focus",
-          details: {
-            title: "",
-            text: "We wanted create an app that would appeal to young and old users, whether they were accomplished chefs or just getting into home cooking.",
-          },
+          type: "subtitle",
+          details: "Enable easy discovery of new recipes that align with the user's tastes",
         },
+        {
+          type: "text",
+          details:
+            "The app should understand the user's dietary restrictions and taste preferences to provide them with an endless supply of potential recipes.",
+        },
+        {
+          type: "subtitle",
+          details: "Lower the barrier of entry to cooking",
+        },
+        {
+          type: "text",
+          details:
+            "We wanted create an app that would appeal to young and old users, whether they were accomplished chefs or just getting into home cooking. By displaying recipes with ingredients already found in the user's fridge, it is easier for them to get started in the kitchen.",
+        }, 
       ],
     },
     {
@@ -160,6 +162,25 @@ export default function Umami() {
           type: "image",
           details: UmamiScreen5,
         },
+      ],
+    },
+    {
+      title: "Learnings",
+      details: [
+        {
+          type: "focus",
+          details: {
+            title: "Designing an app with many competitors is daunting and exciting!",
+            text: "As there are already so many food and recipe apps out there, it was fun to come up with features that set Umami apart, like the social feed aspect.",
+          },
+        },
+        {
+          type: "focus",
+          details: {
+            title: "Personalisation of user experience can be tricky",
+            text: "I think the app further needs some personalisation of experience based on our two user personas. I found it difficult to make sure that all users can access all of the app's features efficiently when customising the experience and so this could be improved.",
+          },
+        },
         {
           type: "image",
           details: UmamiScreen6,
@@ -168,5 +189,5 @@ export default function Umami() {
     },
   ];
 
-  return <div>{BasePage(UmamiIntro, content)}</div>;
+  return <div>{BasePage(UmamiIntro, "#447551", content)}</div>;
 }

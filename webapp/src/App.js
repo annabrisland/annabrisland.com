@@ -7,6 +7,7 @@ import DNA from "./pages/dna";
 import Fungi from "./pages/fungi";
 import Umami from "./pages/umami";
 import KudoCoin from "./pages/kudocoin";
+import Labby from "./pages/labby";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/fungi" component={Fungi} />
       <Route exact path="/umami" component={Umami} />
       <Route exact path="/kudocoin" component={KudoCoin} />
+      <Route exact path="/labby" component={Labby} />
     </Router>
   );
 }
