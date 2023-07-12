@@ -1,18 +1,18 @@
 .pageHeader {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .introImage {
   width: 100vw;
   height: 85vh;
-  margin-top: 50px;
+  margin-top: 25px;
   object-fit: cover;
 }
 
 .introImageMobile {
   width: 100vw;
   height: 40vh;
-  margin-top: 50px;
+  margin-top: 25px;
   object-fit: contain;
 }
 

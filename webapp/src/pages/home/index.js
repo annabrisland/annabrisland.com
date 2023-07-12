@@ -10,6 +10,8 @@ import delveThumb from "../../images/delveThumb.png";
 import labby from "../../images/labby.png";
 import labbyThumbnail from "../../images/labbyThumbnail.png";
 import kudoCoinThumb from "../../images/kudoCoinThumb.png";
+import botany from "../../images/botany.png";
+import botanyThumb from "../../images/botanyThumb.png";
 import goWhite from "../../images/goArrowWhite.png";
 import goBlack from "../../images/goArrowBlack.png";
 import quote from "../../images/quote.png";
@@ -80,7 +82,7 @@ export default function Home() {
       <div className={isMobile ? "anna-intro-mobile" : "anna-intro"}>
         <Affix
           className="fade"
-          offsetTop={50}
+          offsetTop={25}
           style={{
             position: "absolute",
             opacity: scrollPosition <= (isMobile ? 100 : 400) ? 1 : 0,
@@ -148,6 +150,14 @@ export default function Home() {
             "#FFFFFF",
             kudoCoinThumb,
             "/kudocoin/"
+          )}
+          {contentCard(
+            true,
+            <img src={botany} className="work-logo" alt="Botany Logo" />,
+            "Merch and mascot design",
+            "#008B48",
+            botanyThumb,
+            "/ubcbotany/"
           )}
           {contentCard(
             true,

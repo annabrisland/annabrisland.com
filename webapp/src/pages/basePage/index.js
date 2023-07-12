@@ -10,8 +10,6 @@ export default function BasePage(introImage, tintColor, content) {
     window.scrollTo(0, 0);
   }, []);
 
-  console.log(content)
-
   // Types: subtitle, text, focus, image
   return (
     <div>
