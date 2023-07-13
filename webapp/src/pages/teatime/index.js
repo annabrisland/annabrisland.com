@@ -1,148 +1,107 @@
-import { Typography, Row, Col, Image } from "antd";
-import "./index.css";
-import teatimeIntro from "../../images/teatimeIntro.png";
+import teatimeIntro from "../../images/TeaTime.png";
 import teatimeScreen from "../../images/teatimeScreen.png";
 import teatimeScreen2 from "../../images/teatimeScreen2.png";
+import teatimeScreen3 from "../../images/teatimeScreen3.png";
 import { useEffect } from "react";
+import BasePage from "../basePage";
 
 export default function TeaTime() {
-  const { Title, Text } = Typography;
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <Row
-      className="AppTeatime slideTeatime"
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        paddingTop: "5%",
-        paddingBottom: "5%",
-      }}
-    >
-      <Col style={{ paddingLeft: "20%", paddingRight: "20%" }}>
-        <Row justify="end">
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Roboto-Light",
-              marginBottom: 100,
-            }}
-          >
-            March 2021
-          </Text>
-        </Row>
-        <Row justify="center">
-          <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 70,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 0,
-            }}
-          >
-            TeaTime
-          </Title>
-        </Row>
-        <Row justify="center">
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 100,
-            }}
-          >
-            UI Mobile Design
-          </Text>
-        </Row>
-        <Row justify="center">
-          <Image
-            width={"100%"}
-            src={teatimeIntro}
-            style={{ objectFit: "cover", marginBottom: 100 }}
-            preview={false}
-          />
-        </Row>
-        <Row justify="start">
-          <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 30,
-            }}
-          >
-            Why did we make it?
-          </Title>
-        </Row>
-        <Row justify="start">
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              marginBottom: 100,
-              width: "80%",
-            }}
-          >
-            In this digital age, many people struggle with a lack of
-            face-to-face interaction, leaving a huge impact on their mental
-            health. TeaTime is a platform where users can communicate verbally
-            no matter where or when they are.
-          </Text>
-        </Row>
+  const content = [
+    {
+      title: "TeaTime",
+      details: [
+        {
+          type: "intro",
+          details: {
+            title: "TeaTime",
+            subtitle: "Encouraging healthy debate and communication.",
+            text: "We want to disrupt loneliness and motivate people to engage in discussion.",
+            myRole: "UI/UX Designer",
+            timeline: "SF Hacks 2021 - 12 hours",
+          },
+        }
+      ],
+    },
+    {
+      title: "Problem",
+      details: [
+        {
+          type: "subtitle",
+          details: "In this digital age, many people struggle with a lack of face-to-face interaction.",
+        },
+        {
+          type: "text",
+          details:
+            "Loniliness and lack of social interaction can have a drastic impact on an individual's mental health, lifestyle, and happiness",
+        },
+      ],
+    },
+    {
+      title: "Solution",
+      details: [
+        {
+          type: "subtitle",
+          details: "Simplify global communication with strangers",
+        },
+        {
+          type: "text",
+          details:
+            "TeaTime is a platform where users can communicate verbally no matter where or when they are.",
+        },
+        {
+          type: "subtitle",
+          details: "Generate exciting topics of conversation",
+        },
+        {
+          type: "text",
+          details:
+            "By providing a selection of trending topics to consider, beginning your conversation is as easy as selecting a story of interest and recording your thoughts.",
+        },
+        {
+          type: "subtitle",
+          details: "Encourage everyone to speak up and share",
+        },
+        {
+          type: "text",
+          details:
+            "Lock voice notes and messages before users have recorded and posted their own thoughts.",
+        },
+      ],
+    },
+    {
+      title: "Design",
+      details: [
+        {
+          type: "image",
+          details: teatimeScreen,
+        },
+        {
+          type: "image",
+          details: teatimeScreen2,
+        },
+        {
+          type: "image",
+          details: teatimeScreen3,
+        },
+      ],
+    },
+    {
+      title: "Learnings",
+      details: [
+        {
+          type: "focus",
+          details: {
+            title: "This was my first UI/UX design experience!",
+            text: "I learnt so much about the design process in such a short period of time. I really enjoyed being able to creatively think out a design solution to a social problem.",
+          },
+        },
+      ],
+    },
+  ];
 
-        <Row justify="start" align="bottom" style={{marginBottom: 100, marginTop: '-10%' }}>
-          <Text
-            style={{
-              color: "black",
-              fontSize: 20,
-              fontFamily: "Araboto-Normal",
-              width: "50%",
-            }}
-          >
-            <Title
-            className="title"
-            style={{
-              color: "black",
-              fontSize: 50,
-              fontFamily: "Araboto-Normal",
-            }}
-          >
-            What does it do?
-          </Title>
-            TeaTime generates exciting discussions by providing a selection of
-            trending topics to consider. Beginning your conversation is as easy
-            as selecting a story of interest and recording your thoughts.
-            Friends and family can endorse your opinion by voting for the best
-            response and send it to the global page. Worldwide sharing makes it
-            simple to connect with like-minded individuals and further the
-            discussion. Everyone is encouraged to speak up and share before they
-            listen to what others have to say as voice notes are locked to users
-            before they have recorded themselves.
-          </Text>
-          <Image
-            width={"50%"}
-            src={teatimeScreen2}
-            style={{ objectFit: "contain", marginLeft: 100, overflow: 'visible' }}
-            preview={false}
-          />
-        </Row>
-        <Row justify="center">
-          <Image
-            width={"100%"}
-            src={teatimeScreen}
-            style={{ objectFit: "contain" }}
-            preview={false}
-          />
-        </Row>
-      </Col>
-    </Row>
-  );
+  return <div>{BasePage(teatimeIntro, "#3A82FC", content)}</div>;
 }

@@ -159,14 +159,14 @@ export default function Home() {
             botanyThumb,
             "/ubcbotany/"
           )}
-          {contentCard(
+          {/* {contentCard(
             true,
             <img src={delve} className="work-logo" alt="Delve Logo" />,
             "Platform to connect Researchers and Volunteers",
             "#70BA94",
             delveThumb,
             "/delve/"
-          )}
+          )} */}
           {contentCard(
             true,
             <div

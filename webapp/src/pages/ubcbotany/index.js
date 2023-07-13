@@ -17,7 +17,7 @@ export default function Botany() {
 
   const content = [
     {
-      title: "Labby",
+      title: "Botany",
       details: [
         {
           type: "intro",
@@ -68,6 +68,7 @@ export default function Botany() {
         },
       ],
     },
+
   ];
 
   return <div>{BasePage(BotanyIntro, "#077039", content)}</div>;

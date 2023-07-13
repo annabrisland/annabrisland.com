@@ -38,10 +38,11 @@
   flex-direction: column;
   text-align: left;
   align-items: left;
-  justify-content: flex-start;
+  justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
   width: 100vw;
+  height: 85vh;
 }
 
 .anna-about-me {
