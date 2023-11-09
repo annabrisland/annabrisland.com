@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route } from "react-router-dom";
-import "./App.css";
+import "./assets/css/style.css";
 import Home from "./pages/home";
 import TeaTime from "./pages/teatime";
 import Umami from "./pages/umami";
