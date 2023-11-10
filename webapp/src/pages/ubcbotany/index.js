@@ -15,61 +15,87 @@ export default function Botany() {
     window.scrollTo(0, 0);
   }, []);
 
-  const content = [
-    {
-      title: "Botany",
-      details: [
-        {
-          type: "intro",
-          details: {
-            title: "UBC Botany",
-            subtitle: "Logo branding and illustration",
-            text: "UBC Botany needed a design that could be printed on shirts, totes, and stickers.",
-            myRole: "Illustrator & Graphic Designer",
-            timeline: "1 Week",
-          },
-        }
-      ],
-    },
-    {
-      title: "Illustrations",
-      details: [
-        {
-          type: "image",
-          details: BotanyScreen,
-        },
-        {
-          type: "image",
-          details: BotanyScreen2,
-        },
-        {
-          type: "image",
-          details: BotanyScreen3,
-        },
-        {
-          type: "image",
-          details: BotanyScreen4,
-        },
-        {
-          type: "image",
-          details: BotanyScreen5,
-        },
-        {
-          type: "image",
-          details: BotanyScreen6,
-        },
-        {
-          type: "image",
-          details: BotanyScreen7,
-        },
-        {
-          type: "image",
-          details: BotanyScreen8,
-        },
-      ],
-    },
-
-  ];
-
-  return <div>{BasePage(BotanyIntro, "#077039", content)}</div>;
+  return ( 
+  <div>
+  <nav>
+    <a class="logo" href="#">
+    </a>
+    <div id="nav-items">
+        <div class="nav-item">
+            Work
+        </div>
+        <div class="nav-item">
+            About
+        </div>
+        <div class="nav-item CTA">
+            Resume
+        </div>
+    </div>
+</nav>
+<section class="project-header">
+    <div class="project-info grid">
+        <div class="project-title">
+            <h1 class="project-name">UBC Botany</h1>
+            <h3>Designing a logo and mascots</h3>
+        </div>
+        <div class="roles-list">
+            <p>
+                Illustration
+            </p>
+            <p>
+                Logo Design
+            </p>
+            <p>
+                Graphic Design
+            </p>
+        </div>
+    </div>
+    <div>
+        <img class="cover-img" src="./assets/images/botany/botanyProjectCover.jpg" alt="Botany Project"/>
+    </div>
+</section>
+<section class="project-details grid">
+    <p class="description">
+        The botany department at UBC represents students in the Botany program, supporting their love for plants, fungi and algae. <br/><br/> They needed a logo design that could be printed on shirts, totes and stickers.
+    </p>
+</section>
+<section class="content">
+    <div class="grid">
+        <div class="card-1">
+            <img class="project-img" src="./assets/images/botany/botany1.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-2 project-img">
+            <img class="project-img" src="./assets/images/botany/botany2.jpg" alt="Botany project mockup"/>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card-3 project-img">
+            <img class="project-img" src="./assets/images/botany/botany3.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-4 project-img">
+            <img class="project-img" src="./assets/images/botany/botany4.jpg" alt="Botany project mockup"/>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card-7 project-img">
+            <img class="project-img" src="./assets/images/botany/botany5.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-5 project-img">
+            <img class="project-img" src="./assets/images/botany/botany6.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-7 project-img">
+            <img class="project-img" src="./assets/images/botany/botany7.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-5 project-img">
+            <img class="project-img" src="./assets/images/botany/botany8.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-6 project-img">
+            <img class="project-img" src="./assets/images/botany/botany9.jpg" alt="Botany project mockup"/>
+        </div>
+        <div class="card-5 project-img">
+            <img class="project-img" src="./assets/images/botany/botany10.jpg" alt="Botany project mockup"/>
+        </div>
+    </div>
+</section>
+</div>)
 }
