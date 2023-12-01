@@ -199,6 +199,7 @@ h3 {
     padding: 16px 24px;
     border-radius: 20px;
     margin-top: 0;
+    transition: background-color 500ms;
 }
 
 .CTA:hover {
@@ -243,6 +244,38 @@ h3 {
 .name-logo {
     max-width: 250px;
     margin-right: 40px;
+}
+
+.name-title {
+    font-size: 1.1rem;
+    color: #626262;
+    margin-top: 16px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/closeIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 11 / span 1;
+}
+
+.about-paragraph {
+    color: #F4F4F4;
+    grid-column: 2 / span 4;
+}
+
+.about-skills {
+    color: #F4F4F4;
+    grid-column: 7 / span 3;
+}
+
+.about-contact {
+    color: #F4F4F4;
+    grid-column: 11 / span 1;
 }
 
 #contact {

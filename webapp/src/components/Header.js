@@ -12,7 +12,7 @@ export default function Header(projectRef, aboutRef, isMobile) {
     <nav className="main-header">
       <div className="intro">
         <img className="name-logo" src={nameLogo}></img>
-        <div className="name-title">Web Designer & Developer</div>
+        <p className="name-title">Web Designer & Developer</p>
       </div>
       <div className="nav-items">
         <div className="nav-item" onClick={openOverlay}>
