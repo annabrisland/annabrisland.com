@@ -1,12 +1,15 @@
-import BotanyIntro from "../../images/BotanyIntro.png";
-import BotanyScreen from "../../images/BotanyT1.png";
-import BotanyScreen2 from "../../images/BotanyT2.png";
-import BotanyScreen3 from "../../images/BotanyT3.png";
-import BotanyScreen4 from "../../images/BotanyT4.png";
-import BotanyScreen5 from "../../images/BotanyT5.png";
-import BotanyScreen6 from "../../images/BotanyT6.png";
-import BotanyScreen7 from "../../images/BotanyT7.png";
-import BotanyScreen8 from "../../images/BotanyT8.png";
+import BotanyIntro from "../../assets/images/botany/botanyProjectCover.jpg";
+import Botany1 from "../../assets/images/botany/botany1.jpg";
+import Botany2 from "../../assets/images/botany/botany2.jpg";
+import Botany3 from "../../assets/images/botany/botany3.jpg";
+import Botany4 from "../../assets/images/botany/botany4.jpg";
+import Botany5 from "../../assets/images/botany/botany5.jpg";
+import Botany6 from "../../assets/images/botany/botany6.jpg";
+import Botany7 from "../../assets/images/botany/botany7.jpg";
+import Botany8 from "../../assets/images/botany/botany8.jpg";
+import Botany9 from "../../assets/images/botany/botany9.jpg";
+import Botany10 from "../../assets/images/botany/botany10.jpg";
+
 import { useEffect } from "react";
 import BasePage from "../basePage";
 
@@ -18,27 +21,27 @@ export default function Botany() {
   return ( 
   <div>
   <nav>
-    <a class="logo" href="#">
+    <a className="logo" href="#">
     </a>
     <div id="nav-items">
-        <div class="nav-item">
+        <div className="nav-item">
             Work
         </div>
-        <div class="nav-item">
+        <div className="nav-item">
             About
         </div>
-        <div class="nav-item CTA">
+        <div className="nav-item CTA">
             Resume
         </div>
     </div>
 </nav>
-<section class="project-header">
-    <div class="project-info grid">
-        <div class="project-title">
-            <h1 class="project-name">UBC Botany</h1>
+<section className="project-header">
+    <div className="project-info grid">
+        <div className="project-title">
+            <h1 className="project-name">UBC Botany</h1>
             <h3>Designing a logo and mascots</h3>
         </div>
-        <div class="roles-list">
+        <div className="roles-list">
             <p>
                 Illustration
             </p>
@@ -51,49 +54,49 @@ export default function Botany() {
         </div>
     </div>
     <div>
-        <img class="cover-img" src="./assets/images/botany/botanyProjectCover.jpg" alt="Botany Project"/>
+        <img className="cover-img" src={BotanyIntro} alt="Botany Project"/>
     </div>
 </section>
-<section class="project-details grid">
-    <p class="description">
+<section className="project-details grid">
+    <p className="description">
         The botany department at UBC represents students in the Botany program, supporting their love for plants, fungi and algae. <br/><br/> They needed a logo design that could be printed on shirts, totes and stickers.
     </p>
 </section>
-<section class="content">
-    <div class="grid">
-        <div class="card-1">
-            <img class="project-img" src="./assets/images/botany/botany1.jpg" alt="Botany project mockup"/>
+<section className="content">
+    <div className="grid">
+        <div className="card-1">
+            <img className="project-img" src={Botany1} alt="Botany project mockup"/>
         </div>
-        <div class="card-2 project-img">
-            <img class="project-img" src="./assets/images/botany/botany2.jpg" alt="Botany project mockup"/>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="card-3 project-img">
-            <img class="project-img" src="./assets/images/botany/botany3.jpg" alt="Botany project mockup"/>
-        </div>
-        <div class="card-4 project-img">
-            <img class="project-img" src="./assets/images/botany/botany4.jpg" alt="Botany project mockup"/>
+        <div className="card-2 project-img">
+            <img className="project-img" src={Botany2} alt="Botany project mockup"/>
         </div>
     </div>
-    <div class="grid">
-        <div class="card-7 project-img">
-            <img class="project-img" src="./assets/images/botany/botany5.jpg" alt="Botany project mockup"/>
+    <div className="grid">
+        <div className="card-3 project-img">
+            <img className="project-img" src={Botany3} alt="Botany project mockup"/>
         </div>
-        <div class="card-5 project-img">
-            <img class="project-img" src="./assets/images/botany/botany6.jpg" alt="Botany project mockup"/>
+        <div className="card-4 project-img">
+            <img className="project-img" src={Botany4} alt="Botany project mockup"/>
         </div>
-        <div class="card-7 project-img">
-            <img class="project-img" src="./assets/images/botany/botany7.jpg" alt="Botany project mockup"/>
+    </div>
+    <div className="grid">
+        <div className="card-7 project-img">
+            <img className="project-img" src={Botany5} alt="Botany project mockup"/>
         </div>
-        <div class="card-5 project-img">
-            <img class="project-img" src="./assets/images/botany/botany8.jpg" alt="Botany project mockup"/>
+        <div className="card-5 project-img">
+            <img className="project-img" src={Botany6} alt="Botany project mockup"/>
         </div>
-        <div class="card-6 project-img">
-            <img class="project-img" src="./assets/images/botany/botany9.jpg" alt="Botany project mockup"/>
+        <div className="card-7 project-img">
+            <img className="project-img" src={Botany7} alt="Botany project mockup"/>
         </div>
-        <div class="card-5 project-img">
-            <img class="project-img" src="./assets/images/botany/botany10.jpg" alt="Botany project mockup"/>
+        <div className="card-5 project-img">
+            <img className="project-img" src={Botany8} alt="Botany project mockup"/>
+        </div>
+        <div className="card-6 project-img">
+            <img className="project-img" src={Botany9} alt="Botany project mockup"/>
+        </div>
+        <div className="card-5 project-img">
+            <img className="project-img" src={Botany10} alt="Botany project mockup"/>
         </div>
     </div>
 </section>
