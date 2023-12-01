@@ -79,25 +79,7 @@ export default function Home() {
 
   return (
     <div className="App">
-    <nav>
-        <a className="logo" href="#">
-        </a>
-        <div id="nav-items">
-            <div className="nav-item">
-                Work
-            </div>
-            <div className="nav-item" onClick={openOverlay}>
-                About
-            </div>
-            <div className="nav-item CTA">
-                Resume
-            </div>
-        </div>
-    </nav>
-    <header>
-        <h1>Anna Brisland</h1>
-        <h3>Web Designer & Developer</h3>
-    </header>
+    <Header/>
     <div className="overlay" id="about-overlay">
         <a className="close-btn" onClick={closeOverlay}>x</a>
         <div className="overlay-content">
@@ -242,10 +224,6 @@ export default function Home() {
 </div>
   );
 }
-
-function openOverlay() {
-    document.getElementById("about-overlay").style.height = "100%";
-  }
 
   function closeOverlay() {
     document.getElementById("about-overlay").style.height = "0%";

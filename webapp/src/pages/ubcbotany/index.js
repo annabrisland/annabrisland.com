@@ -23,10 +23,7 @@ export default function Botany() {
   <nav>
     <a className="logo" href="#">
     </a>
-    <div id="nav-items">
-        <div className="nav-item">
-            Work
-        </div>
+    <div className="nav-items">
         <div className="nav-item">
             About
         </div>
