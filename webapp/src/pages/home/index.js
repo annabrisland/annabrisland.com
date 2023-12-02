@@ -257,7 +257,7 @@ export default function Home() {
       </section>
       <section className="content" id="about"></section>
       <footer>
-        <div className="grid">
+        {/* <div className="grid">
           <div id="contact">Contact me</div>
           <div id="contact-items">
             <a href="https://github.com/annabrisland" target="_blank">
@@ -276,7 +276,7 @@ export default function Home() {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
       </footer>
     </div>
   );
@@ -284,4 +284,6 @@ export default function Home() {
 
 function closeOverlay() {
   document.getElementById("about-overlay").style.height = "0%";
+  // document.body.style.overflow = "";
+  document.getElementById("about").className = "nav-item about slide-right";
 }

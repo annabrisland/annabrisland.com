@@ -333,6 +333,18 @@ h3 {
     margin-bottom: 12px;
 }
 
+.slide-left {
+    transform: translateX(-50vw);
+    animation: h 1s forwards;
+    transition: transform 500ms;
+}
+
+.slide-right {
+    transform: translateX(0);
+    animation: h 1s forwards;
+    transition: transform 500ms;
+}
+
 #contact {
     display: flex;
     align-items: center;
