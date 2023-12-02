@@ -1,7 +1,5 @@
-import { Typography, Image, Affix } from "antd";
 import { useHistory } from "react-router-dom";
 import "../../assets/css/style.css";
-import nameLogo from "../../assets/images/nameLogo.png";
 import goWhite from "../../images/goArrowWhite.png";
 import goBlack from "../../images/goArrowBlack.png";
 import { useMediaQuery } from "react-responsive";
@@ -11,7 +9,6 @@ import Header from "../../components/Header";
 let loveCount = 0;
 
 export default function Home() {
-  const { Title, Text } = Typography;
   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const history = useHistory();
   const projectRef = useRef();
@@ -69,41 +66,7 @@ export default function Home() {
   return (
     <div className="App">
       <Header />
-      <div className="overlay" id="about-overlay">
-      <button className="close-btn" onClick={closeOverlay}></button>
-        <div className="overlay-content content grid">
-          <div className="about-paragraph">
-          <div className="main-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspisse
-            dictum ex non purus cursus tempor.
-          </div>
-            <div className="second-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspisse
-            dictum ex non purus cursus tempor.
-          </div>
-          </div>
-          <div className="about-skills">
-            Skills
-            <ul className="skills-list">
-                <li className="skill">HTML</li>
-                <li className="skill">CSS</li>
-                <li className="skill">JavaScript</li>
-                <li className="skill">JQuery</li>
-                <li className="skill">Bootstrap</li>
-                <li className="skill">Figma</li>
-                <li className="skill">Adobe Creative Cloud</li>
-            </ul>
-          </div>
-          <div className="about-contact">
-            Contact
-            <ul className="contact-list">
-                <li className="contact">Email</li>
-                <li className="contact">GitHub</li>
-                <li className="contact">Linkedin</li>
-            </ul>
-            </div>
-        </div>
-      </div>
+
       <section className="content">
         <div className="grid">
           <div
@@ -255,35 +218,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="content" id="about"></section>
       <footer>
-        {/* <div className="grid">
-          <div id="contact">Contact me</div>
-          <div id="contact-items">
-            <a href="https://github.com/annabrisland" target="_blank">
-              <button className="contact-link">
-                <img src="./assets/images/github.png" alt="GitHub Logo" />
-              </button>
-            </a>
-            <a href="www.linkedin.com/in/anna-brisland" target="_blank">
-              <button className="contact-link">
-                <img src="./assets/images/linkedin.png" alt="LinkedIn Logo" />
-              </button>
-            </a>
-            <a href="mailto:annabrisland@gmail.com">
-              <button className="contact-link">
-                <img src="./assets/images/email.png" alt="Email" />
-              </button>
-            </a>
-          </div>
-        </div> */}
       </footer>
     </div>
   );
-}
-
-function closeOverlay() {
-  document.getElementById("about-overlay").style.height = "0%";
-  // document.body.style.overflow = "";
-  document.getElementById("about").className = "nav-item about slide-right";
 }

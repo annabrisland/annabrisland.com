@@ -37,6 +37,10 @@ h3 {
     margin: 5px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .overlay {
     height: 0%;
     width: 100%;
