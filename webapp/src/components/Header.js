@@ -15,7 +15,7 @@ export default function Header(projectRef, aboutRef, isMobile) {
         <p className="name-title">Web Designer & Developer</p>
       </div>
       <div className="nav-items">
-        <div className="nav-item" onClick={openOverlay}>
+        <div className="nav-item about" onClick={openOverlay}>
           About
         </div>
         <div className="nav-item CTA">Resume</div>
@@ -26,4 +26,5 @@ export default function Header(projectRef, aboutRef, isMobile) {
 
 function openOverlay() {
   document.getElementById("about-overlay").style.height = "100%";
+  document.body.style.overflow = "hidden";
 }

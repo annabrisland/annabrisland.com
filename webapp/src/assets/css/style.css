@@ -44,10 +44,14 @@ h3 {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(26,26,26, 0.95);
+    background-color: rgba(255,255,255, 0.95);
     overflow-y: hidden;
     transition: 0.5s;
+  }
+
+  .overlay-content{
+    margin-top: 30vh !important;
   }
 
 .logo {
@@ -194,6 +198,10 @@ h3 {
     cursor: pointer;
 }
 
+.about {
+    z-index: 5;
+}
+
 .CTA {
     background-color: #EBEBEB;
     padding: 16px 24px;
@@ -244,6 +252,7 @@ h3 {
 .name-logo {
     max-width: 250px;
     margin-right: 40px;
+    z-index: 5;
 }
 
 .name-title {
@@ -260,22 +269,68 @@ h3 {
     background-image: url(../images/closeIcon.png);
     background-repeat: no-repeat;
     background-size: cover;
-    grid-column: 11 / span 1;
+    margin: 40px 35px 0 0;
+    grid-column: 12 / span 1;
+    float: right;
+}
+
+.close-btn:hover {
+    cursor: pointer;
 }
 
 .about-paragraph {
-    color: #F4F4F4;
     grid-column: 2 / span 4;
 }
 
+.main-paragraph {
+    color: #1A1A1A;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.second-paragraph {
+    color: #1A1A1A;
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+}
+
 .about-skills {
-    color: #F4F4F4;
+    color: #1A1A1A;
     grid-column: 7 / span 3;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 24px 0 0 0;
+    padding: 0;
+}
+
+.skill {
+    color: #1A1A1A;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: solid 1px #1A1A1A;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+
 .about-contact {
-    color: #F4F4F4;
+    color: #1A1A1A;
     grid-column: 11 / span 1;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin: 24px 0 0 0;
+    padding: 0;
+}
+
+.contact {
+    color: #1A1A1A;
+    margin-bottom: 12px;
 }
 
 #contact {
@@ -286,15 +341,6 @@ h3 {
     background-color: white;
     border-radius: 20px;
     font-size: 2rem;
-}
-
-#contact-items {
-    grid-column:  span 3;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 25px;
 }
 
 #ubc-botany {

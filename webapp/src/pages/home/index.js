@@ -70,33 +70,36 @@ export default function Home() {
     <div className="App">
       <Header />
       <div className="overlay" id="about-overlay">
-        <div className="about-title grid">
-        <img className="name-logo" src={nameLogo}></img>
-        <button className="close-btn" onClick={closeOverlay}></button>
-        </div>
-        <div className="overlay-content grid">
+      <button className="close-btn" onClick={closeOverlay}></button>
+        <div className="overlay-content content grid">
           <div className="about-paragraph">
+          <div className="main-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspisse
             dictum ex non purus cursus tempor.
           </div>
+            <div className="second-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspisse
+            dictum ex non purus cursus tempor.
+          </div>
+          </div>
           <div className="about-skills">
             Skills
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Bootstrap</li>
-                <li>Figma</li>
-                <li>Adobe Creative Cloud</li>
+            <ul className="skills-list">
+                <li className="skill">HTML</li>
+                <li className="skill">CSS</li>
+                <li className="skill">JavaScript</li>
+                <li className="skill">JQuery</li>
+                <li className="skill">Bootstrap</li>
+                <li className="skill">Figma</li>
+                <li className="skill">Adobe Creative Cloud</li>
             </ul>
           </div>
           <div className="about-contact">
             Contact
-            <ul>
-                <li>Email</li>
-                <li>GitHub</li>
-                <li>Linkedin</li>
+            <ul className="contact-list">
+                <li className="contact">Email</li>
+                <li className="contact">GitHub</li>
+                <li className="contact">Linkedin</li>
             </ul>
             </div>
         </div>
