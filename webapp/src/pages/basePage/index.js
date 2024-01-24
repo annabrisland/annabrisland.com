@@ -13,7 +13,7 @@ export default function BasePage(introImage, tintColor, content) {
   // Types: subtitle, text, focus, image
   return (
     <div>
-      <div className="pageHeader">{Header(null, null, isMobile)}</div>
+      {/* <div className="pageHeader">{Header(null, null, isMobile)}</div> */}
       <img className={isMobile ? "introImageMobile" : "introImage"} src={introImage} alt="Logo" />
       <div className="contentView">
         {content.map((section) => {
