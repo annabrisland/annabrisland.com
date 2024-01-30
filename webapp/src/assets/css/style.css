@@ -26,7 +26,7 @@ footer {
     margin: 80px 35px 35px 35px;
     height: 150px;
     border-radius: 20px;
-    background-color: #EBEBEB;
+    background-color: white;
 }
 
 h1 {
@@ -247,7 +247,7 @@ a {
 .nav-items {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -456,4 +456,28 @@ a {
 
 .text-heading {
     font-weight: 700;
+}
+
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-item {
+    width: 65px;
+    height: 65px;
+    border-radius: 70px;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    width: 45px;
 }
