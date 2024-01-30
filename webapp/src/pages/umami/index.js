@@ -13,6 +13,7 @@ import Botany10 from "../../assets/images/botany/botany10.jpg";
 import { useEffect } from "react";
 import BasePage from "../basePage";
 import Header from "../../components/Header";
+import ProjectHeader from "../../components/ProjectHeader";
 
 export default function Umami() {
   useEffect(() => {
@@ -22,22 +23,7 @@ export default function Umami() {
   return (
     <div>
       <Header isProject={true} />
-      <section className="project-header">
-        <div className="project-info grid">
-          <div className="project-title">
-            <h1 className="project-name">Umami</h1>
-            <h3>Creating a sharable digital cookbook</h3>
-          </div>
-          <div className="roles-list">
-            <p>UI/UX Design</p>
-            <p>Illustration</p>
-            <p>Design Lead</p>
-          </div>
-        </div>
-        <div>
-          <img className="cover-img" src={UmamiIntro} alt="Umami Project" />
-        </div>
-      </section>
+      <ProjectHeader project={"Umami"} description={"Creating a sharable digital cookbook"} roles={["UI/UX Design","Illustration","Design Lead"]} img={UmamiIntro} />
       <section className="project-details grid">
         <p className="bold-text description">
           There is no central hub to maintain a digital recipe collection,
@@ -53,6 +39,22 @@ export default function Umami() {
         </p>
       </section>
       <section className="content">
+        <div className="grid">
+          <div className="card-3">
+            <img
+              className="project-img"
+              src={Umami1}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-4 project-img">
+            <img
+              className="project-img"
+              src={Umami2}
+              alt="Botany project mockup"
+            />
+          </div>
+        </div>
         <div className="center-text grid">
           <p className="section-title">Solution</p>
           <div className="section-text">
@@ -85,21 +87,13 @@ export default function Umami() {
             </p>
           </div>
         </div>
-        <div className="grid">
-          <div className="card-3">
-            <img
-              className="project-img"
-              src={Umami1}
-              alt="Botany project mockup"
-            />
+        <div className="grid ">
+          <div className="focus-text card-4">
+            <p>71% have ‘gone digital’ when looking for a recipe.</p>
+            <p>33% say technology makes cooking easier.</p>
+            <p>41% enjoy cooking something new.</p>
           </div>
-          <div className="card-4 project-img">
-            <img
-              className="project-img"
-              src={Umami2}
-              alt="Botany project mockup"
-            />
-          </div>
+          <img className="project-img card-3" src={Umami3} />
         </div>
         <div className="grid">
           <p className="section-title">Competitive Audit</p>
@@ -113,14 +107,6 @@ export default function Umami() {
               cross-platform.
             </p>
           </div>
-        </div>
-        <div className="grid ">
-          <div className="focus-text card-4">
-            <p>71% have ‘gone digital’ when looking for a recipe.</p>
-            <p>33% say technology makes cooking easier.</p>
-            <p>41% enjoy cooking something new.</p>
-          </div>
-          <img className="project-img card-3" src={Umami3} />
         </div>
         <div className="grid">
           <img className="project-img card-2" src={Umami4} />
