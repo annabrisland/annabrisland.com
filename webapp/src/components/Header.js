@@ -2,17 +2,16 @@ import nameLogo from "../assets/images/nameLogo.png";
 import { useHistory } from "react-router-dom";
 
 export default function Header({ isProject, isMobile }) {
-  const history = useHistory();
 
   function openOverlay() {
     document.getElementById("about-overlay").style.height = "100%";
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     document.getElementById("about").className = "nav-item about slide-left";
   }
 
   function closeOverlay() {
     document.getElementById("about-overlay").style.height = "0%";
-    // document.body.style.overflow = "";
+    document.body.style.overflow = "";
     document.getElementById("about").className = "nav-item about slide-right";
   }
 
