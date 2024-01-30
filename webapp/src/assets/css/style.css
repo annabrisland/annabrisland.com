@@ -23,7 +23,10 @@ header {
 }
 
 footer {
-    margin: 35px;
+    margin: 80px 35px 35px 35px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #EBEBEB;
 }
 
 h1 {

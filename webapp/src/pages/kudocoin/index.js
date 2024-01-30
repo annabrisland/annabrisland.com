@@ -2,6 +2,9 @@ import KudoCoinIntro from "../../images/KudoCoin.png";
 import KudoCoinScreen from "../../images/KudoCoinT1.png";
 import { useEffect } from "react";
 import BasePage from "../basePage";
+import ProjectHeader from "../../components/ProjectHeader";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 export default function KudoCoin() {
   useEffect(() => {
@@ -95,5 +98,12 @@ export default function KudoCoin() {
     },
   ];
 
-  return <div>{BasePage(KudoCoinIntro, "#000000", content)}</div>;
+  return (
+    <div>
+      <Header isProject={true}/>
+      <ProjectHeader project={"KudoCoin"} description={"Street cred for developers"} roles={["Illustrator & Designer", "Back to Hacking 2021 (Best Incomplete Hack Winner)"]} img={KudoCoinIntro}/>
+      <div>{BasePage(KudoCoinIntro, "#000000", content)}</div>
+      <Footer />
+    </div>
+  );
 }

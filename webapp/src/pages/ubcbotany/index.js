@@ -1,3 +1,8 @@
+import { useEffect } from "react";
+import Header from "../../components/Header";
+import ProjectHeader from "../../components/ProjectHeader";
+import Footer from "../../components/Footer";
+
 import BotanyIntro from "../../assets/images/botany/botanyProjectCover.jpg";
 import Botany1 from "../../assets/images/botany/botany1.jpg";
 import Botany2 from "../../assets/images/botany/botany2.jpg";
@@ -10,10 +15,6 @@ import Botany8 from "../../assets/images/botany/botany8.jpg";
 import Botany9 from "../../assets/images/botany/botany9.jpg";
 import Botany10 from "../../assets/images/botany/botany10.jpg";
 
-import { useEffect } from "react";
-import BasePage from "../basePage";
-import Header from "../../components/Header";
-
 export default function Botany() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,22 +23,7 @@ export default function Botany() {
   return (
     <div>
       <Header isProject={true} />
-      <section className="project-header">
-        <div className="project-info grid">
-          <div className="project-title">
-            <h1 className="project-name">UBC Botany</h1>
-            <h3>Designing a logo and mascots</h3>
-          </div>
-          <div className="roles-list">
-            <p>Illustration</p>
-            <p>Logo Design</p>
-            <p>Graphic Design</p>
-          </div>
-        </div>
-        <div>
-          <img className="cover-img" src={BotanyIntro} alt="Botany Project" />
-        </div>
-      </section>
+      <ProjectHeader project={"UBC Botany"} description={"Designing a logo and mascots"} roles={["Illustration","Logo Design","Graphic Design"]} img={BotanyIntro} />
       <section className="project-details grid">
         <p className="description">
           The botany department at UBC represents students in the Botany
@@ -124,6 +110,7 @@ export default function Botany() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

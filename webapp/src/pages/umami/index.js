@@ -6,12 +6,8 @@ import Umami4 from "../../assets/images/umami/umami4.jpg";
 import Umami5 from "../../assets/images/umami/umami5.jpg";
 import Umami6 from "../../assets/images/umami/umami6.jpg";
 import Umami7 from "../../assets/images/umami/umami7.jpg";
-import Botany8 from "../../assets/images/botany/botany8.jpg";
-import Botany9 from "../../assets/images/botany/botany9.jpg";
-import Botany10 from "../../assets/images/botany/botany10.jpg";
 
 import { useEffect } from "react";
-import BasePage from "../basePage";
 import Header from "../../components/Header";
 import ProjectHeader from "../../components/ProjectHeader";
 
