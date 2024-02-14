@@ -1,75 +1,116 @@
-import BotanyIntro from "../../images/BotanyIntro.png";
-import BotanyScreen from "../../images/BotanyT1.png";
-import BotanyScreen2 from "../../images/BotanyT2.png";
-import BotanyScreen3 from "../../images/BotanyT3.png";
-import BotanyScreen4 from "../../images/BotanyT4.png";
-import BotanyScreen5 from "../../images/BotanyT5.png";
-import BotanyScreen6 from "../../images/BotanyT6.png";
-import BotanyScreen7 from "../../images/BotanyT7.png";
-import BotanyScreen8 from "../../images/BotanyT8.png";
 import { useEffect } from "react";
-import BasePage from "../basePage";
+import Header from "../../components/Header";
+import ProjectHeader from "../../components/ProjectHeader";
+import Footer from "../../components/Footer";
+
+import BotanyIntro from "../../assets/images/botany/botanyProjectCover.jpg";
+import Botany1 from "../../assets/images/botany/botany1.jpg";
+import Botany2 from "../../assets/images/botany/botany2.jpg";
+import Botany3 from "../../assets/images/botany/botany3.jpg";
+import Botany4 from "../../assets/images/botany/botany4.jpg";
+import Botany5 from "../../assets/images/botany/botany5.jpg";
+import Botany6 from "../../assets/images/botany/botany6.jpg";
+import Botany7 from "../../assets/images/botany/botany7.jpg";
+import Botany8 from "../../assets/images/botany/botany8.jpg";
+import Botany9 from "../../assets/images/botany/botany9.jpg";
+import Botany10 from "../../assets/images/botany/botany10.jpg";
 
 export default function Botany() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const content = [
-    {
-      title: "Botany",
-      details: [
-        {
-          type: "intro",
-          details: {
-            title: "UBC Botany",
-            subtitle: "Logo branding and illustration",
-            text: "UBC Botany needed a design that could be printed on shirts, totes, and stickers.",
-            myRole: "Illustrator & Graphic Designer",
-            timeline: "1 Week",
-          },
-        }
-      ],
-    },
-    {
-      title: "Illustrations",
-      details: [
-        {
-          type: "image",
-          details: BotanyScreen,
-        },
-        {
-          type: "image",
-          details: BotanyScreen2,
-        },
-        {
-          type: "image",
-          details: BotanyScreen3,
-        },
-        {
-          type: "image",
-          details: BotanyScreen4,
-        },
-        {
-          type: "image",
-          details: BotanyScreen5,
-        },
-        {
-          type: "image",
-          details: BotanyScreen6,
-        },
-        {
-          type: "image",
-          details: BotanyScreen7,
-        },
-        {
-          type: "image",
-          details: BotanyScreen8,
-        },
-      ],
-    },
-
-  ];
-
-  return <div>{BasePage(BotanyIntro, "#077039", content)}</div>;
+  return (
+    <div>
+      <Header isProject={true} />
+      <ProjectHeader project={"UBC Botany"} description={"Designing a logo and mascots"} roles={["Illustration","Logo Design","Graphic Design"]} img={BotanyIntro} />
+      <section className="project-details grid">
+        <p className="description">
+          The botany department at UBC represents students in the Botany
+          program, supporting their love for plants, fungi and algae. <br />
+          <br /> They needed a logo design that could be printed on shirts,
+          totes and stickers.
+        </p>
+      </section>
+      <section className="content">
+        <div className="grid">
+          <div className="card-1">
+            <img
+              className="project-img"
+              src={Botany1}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-2 project-img">
+            <img
+              className="project-img"
+              src={Botany2}
+              alt="Botany project mockup"
+            />
+          </div>
+        </div>
+        <div className="grid">
+          <div className="card-3 project-img">
+            <img
+              className="project-img"
+              src={Botany3}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-4 project-img">
+            <img
+              className="project-img"
+              src={Botany4}
+              alt="Botany project mockup"
+            />
+          </div>
+        </div>
+        <div className="grid">
+          <div className="card-7 project-img">
+            <img
+              className="project-img"
+              src={Botany5}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-5 project-img">
+            <img
+              className="project-img"
+              src={Botany6}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-7 project-img">
+            <img
+              className="project-img"
+              src={Botany7}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-5 project-img">
+            <img
+              className="project-img"
+              src={Botany8}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-6 project-img">
+            <img
+              className="project-img"
+              src={Botany9}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-5 project-img">
+            <img
+              className="project-img"
+              src={Botany10}
+              alt="Botany project mockup"
+            />
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
 }

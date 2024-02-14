@@ -6,6 +6,9 @@ import LabbyScreen4 from "../../images/LabbyT4.png";
 import LabbyScreen5 from "../../images/LabbyT5.png";
 import { useEffect } from "react";
 import BasePage from "../basePage";
+import ProjectHeader from "../../components/ProjectHeader";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Labby() {
   useEffect(() => {
@@ -13,21 +16,6 @@ export default function Labby() {
   }, []);
 
   const content = [
-    {
-      title: "Labby",
-      details: [
-        {
-          type: "intro",
-          details: {
-            title: "Labby",
-            subtitle: "A Lab Managment System for BC Cancer",
-            text: "Labby is a lab management software built for part of BC Cancer Research Center to automate administrative duties and streamline the research process.",
-            myRole: "UI/UX Designer",
-            timeline: "UBC Launchpad - 8 months",
-          },
-        }
-      ],
-    },
     {
       title: "Problem",
       details: [
@@ -196,5 +184,13 @@ export default function Labby() {
     },
   ];
 
-  return <div>{BasePage(LabbyIntro, "#4E62C7", content)}</div>;
+  return (
+    <div>
+      <Header isProject={true} />
+      <ProjectHeader project={"Labby"} description={"A Lab Management System for BC Cancer"} roles={["UI/UX Design","Design Lead"]} img={LabbyIntro} />
+      <div>{BasePage(LabbyIntro, "#4E62C7", content)}</div>
+      <Footer />
+    </div>
+  );
+  
 }

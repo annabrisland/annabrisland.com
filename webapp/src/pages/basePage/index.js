@@ -13,8 +13,6 @@ export default function BasePage(introImage, tintColor, content) {
   // Types: subtitle, text, focus, image
   return (
     <div>
-      <div className="pageHeader">{Header(null, null, isMobile)}</div>
-      <img className={isMobile ? "introImageMobile" : "introImage"} src={introImage} alt="Logo" />
       <div className="contentView">
         {content.map((section) => {
           if (isMobile) {
@@ -50,20 +48,6 @@ export default function BasePage(introImage, tintColor, content) {
                             alt="Content Detail"
                           />
                         ) : null}
-                        {detail.type === "intro" ? (
-                    <div className="contentRow">
-                      <div className="introCol">
-                        <div className="introTitle mobileGap" style={{color: tintColor}}>{detail.details.title}</div>
-                        <div className="introSubtitle mobileGap">{detail.details.subtitle}</div>
-                        <div className="detailText mobileGap">{detail.details.text}</div>
-                        <div className="subtitleText mobileGap">My Role</div>
-                        <div className="detailTex mobileGap">{detail.details.myRole}</div>
-                        <div className="subtitleText mobileGap">Timeline</div>
-                        <div className="detailText mobileGap">{detail.details.timeline}</div>
-                      </div>
-                    </div>
-                  ) : null
-                  }
                       </div>
                     </div>
                   );
@@ -85,24 +69,6 @@ export default function BasePage(introImage, tintColor, content) {
                       />
                     </div>
                   );
-                }
-
-                if (detail.type === "intro") {
-                  return (
-                    <div className="contentRow">
-                      <div className="introCol">
-                        <div className="introTitle" style={{color: tintColor}}>{detail.details.title}</div>
-                        <div className="introSubtitle">{detail.details.subtitle}</div>
-                        <div className="detailText">{detail.details.text}</div>
-                      </div>
-                      <div className="specCol">
-                        <div className="subtitleText">My Role</div>
-                        <div className="detailText">{detail.details.myRole}</div>
-                        <div className="subtitleText">Timeline</div>
-                        <div className="detailText">{detail.details.timeline}</div>
-                      </div>
-                    </div>
-                  )
                 }
 
                 return (

@@ -1,12 +1,17 @@
-import UmamiIntro from "../../images/Umami.png";
-import UmamiScreen from "../../images/UmamiT1.png";
-import UmamiScreen2 from "../../images/UmamiT2.png";
-import UmamiScreen3 from "../../images/UmamiT3.png";
-import UmamiScreen4 from "../../images/UmamiT4.png";
-import UmamiScreen5 from "../../images/UmamiT5.png";
-import UmamiScreen6 from "../../images/UmamiT6.png";
+import UmamiIntro from "../../assets/images/umami/umamiCover.jpg";
+import Umami1 from "../../assets/images/umami/umami1.jpg";
+import Umami2 from "../../assets/images/umami/umami2.jpg";
+import Umami3 from "../../assets/images/umami/umami3.jpg";
+import Umami4 from "../../assets/images/umami/umami4.jpg";
+import Umami5 from "../../assets/images/umami/umami5.jpg";
+import Umami6 from "../../assets/images/umami/umami6.jpg";
+import Umami7 from "../../assets/images/umami/umami7.jpg";
+
 import { useEffect } from "react";
+import Header from "../../components/Header";
+import ProjectHeader from "../../components/ProjectHeader";
 import BasePage from "../basePage";
+import Footer from "../../components/Footer";
 
 export default function Umami() {
   useEffect(() => {
@@ -43,7 +48,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiScreen,
+          details: UmamiIntro,
         },
       ],
     },
@@ -76,7 +81,7 @@ export default function Umami() {
           type: "text",
           details:
             "We wanted create an app that would appeal to young and old users, whether they were accomplished chefs or just getting into home cooking. By displaying recipes with ingredients already found in the user's fridge, it is easier for them to get started in the kitchen.",
-        }, 
+        },
       ],
     },
     {
@@ -85,7 +90,7 @@ export default function Umami() {
         {
           type: "text",
           details:
-            <p>We completed a competitive audit to check out what other recipe apps on the market offered and to find out what they were missing. With so many websites, cookbooks and other resources online, it can be time-consuming and tedious to find a healthy recipe that fits each person’s dietary restrictions and taste preferences. <br /> <br /> 
+            <p>We completed a competitive audit to check out what other recipe apps on the market offered and to find out what they were missing. With so many websites, cookbooks and other resources online, it can be time-consuming and tedious to find a healthy recipe that fits each person’s dietary restrictions and taste preferences. <br /> <br />
             Many apps on the market are based on sharing their own recipes, however, these platforms lack community, variety and the ability to share recipes with others. <br /> <br />
             We found that three major things: <br /> <br />
             1. Not all platforms had unique and interesting recipes <br />
@@ -94,7 +99,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiScreen2,
+          details: UmamiIntro,
         },
       ],
     },
@@ -137,7 +142,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiScreen3,
+          details: UmamiIntro,
         },
         {
           type: "text",
@@ -146,7 +151,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiScreen4,
+          details: UmamiIntro,
         },
       ],
     },
@@ -160,7 +165,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiScreen5,
+          details: UmamiIntro,
         },
       ],
     },
@@ -181,13 +186,123 @@ export default function Umami() {
             text: "I think the app further needs some personalisation of experience based on our two user personas. I found it difficult to make sure that all users can access all of the app's features efficiently when customising the experience and so this could be improved.",
           },
         },
-        {
-          type: "image",
-          details: UmamiScreen6,
-        },
       ],
     },
   ];
 
-  return <div>{BasePage(UmamiIntro, "#447551", content)}</div>;
+  return (
+    <div>
+      <Header isProject={true} />
+      <ProjectHeader project={"Umami"} description={"Creating a sharable digital cookbook"} roles={["UI/UX Design","Illustration","Design Lead"]} img={UmamiIntro} />
+      <div>
+        {BasePage(UmamiIntro, "#447551", content)}
+      </div>
+      <Footer />
+      {/* <section className="project-details grid">
+        <p className="bold-text description">
+          There is no central hub to maintain a digital recipe collection,
+          leaving users unable to find what they want.
+        </p>
+        <p className="description">
+          Umami is a healthy recipe sharing app that allows users to search for
+          the perfect recipe. Users can also upload their own recipes and even
+          follow their favourite recipe creators to stay on top of the best
+          delicious creations. It also allows home-chefs to keep track of their
+          fridge and pantries so they can make the most of the ingredients they
+          already have!
+        </p>
+      </section>
+      <section className="content">
+        <div className="grid">
+          <div className="card-3">
+            <img
+              className="project-img"
+              src={Umami1}
+              alt="Botany project mockup"
+            />
+          </div>
+          <div className="card-4 project-img">
+            <img
+              className="project-img"
+              src={Umami2}
+              alt="Botany project mockup"
+            />
+          </div>
+        </div>
+        <div className="center-text grid">
+          <p className="section-title">Solution</p>
+          <div className="section-text">
+            <p className="text-heading">
+              Allow users to upload and network their own recipes
+            </p>
+            <p>
+              Users should be able to maintain their own recipe collection
+              without searching through long browser bookmarks or making a trip
+              cross-platform.
+            </p>
+            <p className="text-heading">
+              Enable easy discovery of new recipes that align with the user's
+              tastes
+            </p>
+            <p>
+              The app should understand the user's dietary restrictions and
+              taste preferences to provide them with an endless supply of
+              potential recipes.
+            </p>
+            <p className="text-heading">
+              Lower the barrier of entry to cooking
+            </p>
+            <p>
+              We wanted create an app that would appeal to young and old users,
+              whether they were accomplished chefs or just getting into home
+              cooking. By displaying recipes with ingredients already found in
+              the user's fridge, it is easier for them to get started in the
+              kitchen.
+            </p>
+          </div>
+        </div>
+        <div className="grid ">
+          <div className="focus-text card-4">
+            <p>71% have ‘gone digital’ when looking for a recipe.</p>
+            <p>33% say technology makes cooking easier.</p>
+            <p>41% enjoy cooking something new.</p>
+          </div>
+          <img className="project-img card-3" src={Umami3} />
+        </div>
+        <div className="grid">
+          <p className="section-title">Competitive Audit</p>
+          <div className="section-text">
+            <p className="text-heading">
+              Allow users to upload and network their own recipes
+            </p>
+            <p>
+              Users should be able to maintain their own recipe collection
+              without searching through long browser bookmarks or making a trip
+              cross-platform.
+            </p>
+          </div>
+        </div>
+        <div className="grid">
+          <img className="project-img card-2" src={Umami4} />
+          <div className="focus-text card-1">
+            We created a flexible onboarding process accounting for personal
+            tastes, dietary restrictions, and recipe discovery preferences.
+          </div>
+        </div>
+        <div className="grid">
+        <img className="project-img card-1" src={Umami5} />
+        <img className="project-img card-2" src={Umami6} />
+        </div>
+        <p className="center-text">
+        Our home page offers a personalised feed based on the user’s onboarding choices and their followed users.
+        </p>
+        <div className="grid">
+          <div className="focus-text card-4">
+          We settled on a bright and visually appealing design system to invoke a sense of excitement when the user opens the app.
+          </div>
+          <img className="project-img card-3" src={Umami7} />
+        </div>
+      </section> */}
+    </div>
+  );
 }
