@@ -6,10 +6,21 @@
     margin-bottom: 80px;
 }
 
+.name-logo {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.header-logo {
+    max-width: 40px;
+    margin-top: 20px;
+}
+
 .floating {
    z-index: 10;
    position: fixed;
    left: 50%;
+   top: 20px;
    transform: translateX(-50%);
    background: hsla(0,0%,100%,.7);
    backdrop-filter: blur(8px);
@@ -17,24 +28,28 @@
 }
 
 .header-menu-list {
-    /* background-color: green; */
     font-weight: 600;
     display: flex;
-    padding: 7px;
+    gap: 8px;
+    padding: 8px;
 }
 
 .header-menu-item {
     list-style-type: none;
-    padding: inherit;
+    padding: 8px 0px;
 }
 
 .header-menu-link {
     transition: all 250ms ease;
-    padding: inherit;
+    padding: 8px 12px;
     border-radius: 20px;
 }
 
 .header-menu-link:hover {
-    background-color: black;
+    background-color: #EBEBEB;
+}
+
+.header-menu-current {
+    background-color: #1A1A1A;
     color: white;
 }
