@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Header({ isMobile }) {
 
-  let currentPage = "work";
+  let currentPage = "home";
   if (window.document.URL.includes("about")) {
     currentPage = "about";
   } else if (window.document.URL.includes("contact")){
@@ -19,8 +19,8 @@ export default function Header({ isMobile }) {
     <nav className="floating">
           <ul className="header-menu-list">
             <li className="header-menu-item">
-              <a className={`header-menu-link ${activeLink == "work" ? "header-menu-current" : ""}`} href="/" >
-                Work
+              <a className={`header-menu-link ${activeLink == "home" ? "header-menu-current" : ""}`} href="/" >
+                Home
               </a>
             </li>
             <li className="header-menu-item">
@@ -110,8 +110,8 @@ export default function Header({ isMobile }) {
         <nav className="floating">
           <ul className="header-menu-list">
             <li className="header-menu-item">
-              <a className={`header-menu-link ${activeLink == "work" ? "header-menu-current" : ""}`} href="/" >
-                Work
+              <a className={`header-menu-link ${activeLink == "home" ? "header-menu-current" : ""}`} href="/" >
+                Home
               </a>
             </li>
             <li className="header-menu-item">
