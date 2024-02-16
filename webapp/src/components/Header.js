@@ -104,8 +104,8 @@ export default function Header({ isMobile }) {
     // </div>
     <header>
       <div className="header-items">
-        <a>
-          <img className="name-logo" src={nameLogo}></img>
+        <a href="/">
+          <img className="name-logo" src={nameLogo} alt=""></img>
         </a>
         <nav className="floating">
           <ul className="header-menu-list">
