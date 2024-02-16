@@ -1,0 +1,56 @@
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    margin-bottom: 80px;
+}
+
+.name-logo {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.header-logo {
+    max-width: 40px;
+    margin-top: 20px;
+}
+
+.floating {
+   z-index: 10;
+   position: fixed;
+   left: 50%;
+   top: 20px;
+   transform: translateX(-50%);
+   background: hsla(0,0%,100%,.7);
+   backdrop-filter: blur(8px);
+   border-radius: 30px;
+}
+
+.header-menu-list {
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+
+.header-menu-item {
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+.header-menu-link {
+    transition: all 250ms ease;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.header-menu-link:hover {
+    background-color: #EBEBEB;
+    color: #1A1A1A;
+}
+
+.header-menu-current {
+    background-color: #1A1A1A;
+    color: white;
+}
