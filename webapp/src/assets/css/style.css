@@ -10,10 +10,6 @@ body {
   background-color: white;
 }
 
-footer {
-  background-color: white;
-}
-
 h1 {
   font-family: "Satoshi-Bold";
   font-size: 3.4rem;
@@ -30,19 +26,29 @@ a {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 100px;
+  margin: 125px 0 150px 0;
+}
+
+.hero-intro {
+  font-size: 1.7rem;
+  width: 45%;
+  font-weight: 600;
 }
 
 .large {
   background-color: #f4f4f4;
   transition: 500ms;
+  border-radius: 0 0 20px 20px;
 }
 
 .small {
   background-color: #f4f4f4;
-  border-radius: 40px;
-  margin: 0 20px;
+  border-radius: 0 0 40px 40px;
+  margin: 0 40px;
 }
 
 .content {

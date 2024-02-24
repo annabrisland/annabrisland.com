@@ -87,7 +87,7 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setSmall(window.scrollY > 800));
+      window.addEventListener("scroll", () => setSmall(window.scrollY > 900));
     }
   }, []);
 
@@ -97,7 +97,7 @@ export default function Home() {
         <Header />
         <div className="hero">
           <h1>Hi, I'm Anna.</h1>
-          <h3>hello</h3>
+          <h3 className="hero-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu libero, viverra eget magna at</h3>
         </div>
         <section className="content">
           <div className="grid">
