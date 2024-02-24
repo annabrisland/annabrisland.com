@@ -18,5 +18,13 @@
 }
 
 .contact-list-item {
-    padding-bottom: 8px;
+    margin-right: 8px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.contact-list-item:hover {
+    background-color: #1A1A1A;
+    color: white;
 }

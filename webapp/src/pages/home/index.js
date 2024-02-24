@@ -83,105 +83,114 @@ export default function Home() {
     );
   }
 
+  const [small, setSmall] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setSmall(window.scrollY > 800));
+    }
+  }, []);
+
   return (
     <div className="App">
-      <Header />
-      <div className="hero">
-        <h1>
-        Hi, I'm Anna.
-        </h1> 
+      <div className={`large ${small ? "small" : ""}`}>
+        <Header />
+        <div className="hero">
+          <h1>Hi, I'm Anna.</h1>
+          <h3>hello</h3>
+        </div>
+        <section className="content">
+          <div className="grid">
+            <div
+              className="card-1 card"
+              id="ubc-botany"
+              onClick={() => {
+                history.push("ubcbotany");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">UBC Botany</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                  A merch and mascot design for the University of British
+                  Columbia Botany Department.
+                </p>
+                <div>
+                  <p className="card-roles">Illustration</p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="card-2 card"
+              id="labby"
+              onClick={() => {
+                history.push("labby");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">Labby</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                  A Lab Management Software for BC Cancer Research Center.
+                </p>
+                <div>
+                  <p className="card-roles">UI/UX Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid">
+            <div
+              className="card-3 card"
+              id="umami"
+              onClick={() => {
+                history.push("umami");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">Umami</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                  A community driven recipe app for cooking enjoyment, healthy
+                  eating, and sharing of recipes.
+                </p>
+                <div>
+                  <p className="card-roles">UI/UX Design</p>
+                  <p className="card-roles">Illustration</p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="card-4 card"
+              id="kudocoin"
+              onClick={() => {
+                history.push("kudocoin");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">KudoCoin</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                  An ERC20 token that serves its purpose as street cred for
+                  developers
+                </p>
+                <div>
+                  <p className="card-roles">UI/UX Design</p>
+                  <p className="card-roles">Illustration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <section className="content">
-        <div className="grid">
-          <div
-            className="card-1 card"
-            id="ubc-botany"
-            onClick={() => {
-              history.push("ubcbotany");
-            }}
-          >
-            <div className="card-info">
-              <div className="card-head">
-                <p className="card-title">UBC Botany</p>
-                <div className="card-button">{arrowSvg()}</div>
-              </div>
-              <p className="card-desc">
-                A merch and mascot design for the University of British Columbia
-                Botany Department.
-              </p>
-              <div>
-                <p className="card-roles">Illustration</p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="card-2 card"
-            id="labby"
-            onClick={() => {
-              history.push("labby");
-            }}
-          >
-            <div className="card-info">
-              <div className="card-head">
-                <p className="card-title">Labby</p>
-                <div className="card-button">{arrowSvg()}</div>
-              </div>
-              <p className="card-desc">
-                A Lab Management Software for BC Cancer Research Center.
-              </p>
-              <div>
-                <p className="card-roles">UI/UX Design</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid">
-          <div
-            className="card-3 card"
-            id="umami"
-            onClick={() => {
-              history.push("umami");
-            }}
-          >
-            <div className="card-info">
-              <div className="card-head">
-                <p className="card-title">Umami</p>
-                <div className="card-button">{arrowSvg()}</div>
-              </div>
-              <p className="card-desc">
-                A community driven recipe app for cooking enjoyment, healthy
-                eating, and sharing of recipes.
-              </p>
-              <div>
-                <p className="card-roles">UI/UX Design</p>
-                <p className="card-roles">Illustration</p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="card-4 card"
-            id="kudocoin"
-            onClick={() => {
-              history.push("kudocoin");
-            }}
-          >
-            <div className="card-info">
-              <div className="card-head">
-                <p className="card-title">KudoCoin</p>
-                <div className="card-button">{arrowSvg()}</div>
-              </div>
-              <p className="card-desc">
-                An ERC20 token that serves its purpose as street cred for
-                developers
-              </p>
-              <div>
-                <p className="card-roles">UI/UX Design</p>
-                <p className="card-roles">Illustration</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <Footer />
     </div>
   );

@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
 footer {
@@ -34,9 +34,20 @@ a {
   margin-bottom: 100px;
 }
 
+.large {
+  background-color: #f4f4f4;
+  transition: 500ms;
+}
+
+.small {
+  background-color: #f4f4f4;
+  border-radius: 40px;
+  margin: 0 20px;
+}
+
 .content {
   margin: 0 20px;
-  padding-bottom: 100px;
+  padding-bottom: 5px;
 }
 
 .grid {
