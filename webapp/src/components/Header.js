@@ -24,11 +24,6 @@ export default function Header({ isMobile }) {
               </a>
             </li>
             <li className="header-menu-item">
-              <a className={`header-menu-link ${activeLink == "about" ? "header-menu-current" : ""}`} href="/about" >
-                About
-              </a>
-            </li>
-            <li className="header-menu-item">
               <a className={`header-menu-link ${activeLink == "contact" ? "header-menu-current" : ""}`} href="/contact" >
                 Contact
               </a>
@@ -112,11 +107,6 @@ export default function Header({ isMobile }) {
             <li className="header-menu-item">
               <a className={`header-menu-link ${activeLink == "home" ? "header-menu-current" : ""}`} href="/" >
                 Home
-              </a>
-            </li>
-            <li className="header-menu-item">
-              <a className={`header-menu-link ${activeLink == "about" ? "header-menu-current" : ""}`} href="/about" >
-                About
               </a>
             </li>
             <li className="header-menu-item">

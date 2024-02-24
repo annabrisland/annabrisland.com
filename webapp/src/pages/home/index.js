@@ -86,7 +86,11 @@ export default function Home() {
   return (
     <div className="App">
       <Header />
-
+      <div className="hero">
+        <h1>
+        Hi, I'm Anna.
+        </h1> 
+      </div>
       <section className="content">
         <div className="grid">
           <div
