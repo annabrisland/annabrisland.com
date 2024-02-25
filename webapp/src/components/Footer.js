@@ -1,9 +1,10 @@
 import "../assets/css/footer.css";
+import { forwardRef } from "react";
 
-export default function Footer() {
+function Footer(props, ref) {
   return (
     <footer>
-      <div className="footer-container">
+      <div ref={ref} className="footer-container">
         <h2 className="footer-heading">Have a good day!</h2>
         <ul className="contact-list">
           <li className="contact-list-item">
@@ -34,3 +35,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default forwardRef(Footer);
