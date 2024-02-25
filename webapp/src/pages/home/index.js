@@ -10,8 +10,6 @@ import Footer from "../../components/Footer";
 export default function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const history = useHistory();
-  const projectRef = useRef();
-  const aboutRef = useRef();
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -99,8 +97,8 @@ export default function Home() {
       <div className={`large ${small ? "small" : ""}`}>
         <Header handleScroll={handleScroll}/>
         <div className="hero">
-          <h1>Hi, I'm Anna.</h1>
-          <h3 className="hero-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu libero, viverra eget magna at</h3>
+          <h1>Hi, I'm Anna</h1>
+          <h3 className="hero-intro">a product designer with a huge passion for the science of design and creative problem solving.</h3>
         </div>
         <section className="content">
           <div className="grid">
