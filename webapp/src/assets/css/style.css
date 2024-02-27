@@ -290,3 +290,20 @@ a {
 .text-heading {
   font-weight: 700;
 }
+
+@media only screen and (max-width: 1224px) {
+  .hero-intro {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
+    grid-column: span 12;
+  }
+  
+  .card-info {
+    opacity: 1;
+    bottom: 0px;
+  }
+
+}
