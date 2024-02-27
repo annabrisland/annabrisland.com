@@ -1,11 +1,7 @@
 import { useHistory } from "react-router-dom";
 import "../../assets/css/style.css";
-import goWhite from "../../images/goArrowWhite.png";
-import goBlack from "../../images/goArrowBlack.png";
 import { useMediaQuery } from "react-responsive";
-import { useEffect, useRef, useState } from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -20,45 +16,6 @@ export default function Home() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollPosition]);
-
-  function contentCard(light, logo, text, color, image, pushTo) {
-    return (
-      <div
-        className={isMobile ? "project-card-mobile" : "project-card"}
-        onClick={() => {
-          history.push(pushTo);
-        }}
-        style={{
-          backgroundColor: color,
-          outline: color === "#FFFFFF" ? "2px solid #000000" : "none",
-        }}
-      >
-        <div
-          className={
-            isMobile ? "project-card-header-mobile" : "project-card-header"
-          }
-        >
-          {logo}
-          <img
-            src={light ? goWhite : goBlack}
-            className={isMobile ? "go-image-mobile" : "go-image"}
-            alt="Go"
-          />
-        </div>
-        <p
-          className={
-            isMobile ? "project-card-desc-mobile" : "project-card-desc"
-          }
-          style={{
-            color: light ? "#FFFFFF" : "#000000",
-          }}
-        >
-          {text}
-        </p>
-        <img src={image} className="work-image" alt="Logo" />
-      </div>
-    );
-  }
 
   function arrowSvg() {
     return (
@@ -79,23 +36,8 @@ export default function Home() {
     );
   }
 
-  const [small, setSmall] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setSmall(window.scrollY > 900));
-    }
-  }, []);
-
-  const ref = useRef(null);
-  const handleScroll = () => {
-    ref.current?.scrollIntoView({behavior: "smooth"})
-  };
-
   return (
     <div className="App">
-      <div className={`large ${small ? "small" : ""}`}>
-        <Header handleScroll={handleScroll}/>
         <div className="hero">
           <h1>Hi, I'm Anna</h1>
           <h3 className="hero-intro">a product designer with a huge passion for the science of design and creative problem solving.</h3>
@@ -191,8 +133,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
-      <Footer ref={ref}/>
     </div>
   );
 }

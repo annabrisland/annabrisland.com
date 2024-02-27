@@ -1,17 +1,15 @@
 import UmamiIntro from "../../assets/images/umami/umamiCover.jpg";
-import Umami1 from "../../assets/images/umami/umami1.jpg";
-import Umami2 from "../../assets/images/umami/umami2.jpg";
-import Umami3 from "../../assets/images/umami/umami3.jpg";
-import Umami4 from "../../assets/images/umami/umami4.jpg";
-import Umami5 from "../../assets/images/umami/umami5.jpg";
+import Umami1 from "../../assets/images/umami/UmamiT1.png";
+import Umami2 from "../../assets/images/umami/UmamiT2.png";
+import Umami3 from "../../assets/images/umami/UmamiT3.png";
+import Umami4 from "../../assets/images/umami/UmamiT4.png";
+import Umami5 from "../../assets/images/umami/UmamiT5.png";
 import Umami6 from "../../assets/images/umami/umami6.jpg";
 import Umami7 from "../../assets/images/umami/umami7.jpg";
 
 import { useEffect } from "react";
-import Header from "../../components/Header";
 import ProjectHeader from "../../components/ProjectHeader";
 import BasePage from "../basePage";
-import Footer from "../../components/Footer";
 
 export default function Umami() {
   useEffect(() => {
@@ -48,7 +46,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiIntro,
+          details: Umami1,
         },
       ],
     },
@@ -99,7 +97,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiIntro,
+          details: Umami2,
         },
       ],
     },
@@ -142,7 +140,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiIntro,
+          details: Umami3,
         },
         {
           type: "text",
@@ -151,7 +149,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiIntro,
+          details: Umami4,
         },
       ],
     },
@@ -165,7 +163,7 @@ export default function Umami() {
         },
         {
           type: "image",
-          details: UmamiIntro,
+          details: Umami5,
         },
       ],
     },
@@ -192,12 +190,10 @@ export default function Umami() {
 
   return (
     <div>
-      <Header isProject={true} />
       <ProjectHeader project={"Umami"} description={"Creating a sharable digital cookbook"} roles={["UI/UX Design","Illustration","Design Lead"]} img={UmamiIntro} />
       <div>
         {BasePage(UmamiIntro, "#447551", content)}
       </div>
-      <Footer />
       {/* <section className="project-details grid">
         <p className="bold-text description">
           There is no central hub to maintain a digital recipe collection,

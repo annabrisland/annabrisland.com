@@ -2,7 +2,6 @@ import nameLogo from "../assets/images/nameLogo.png";
 import logo from "../assets/images/logo.png";
 import "../assets/css/header.css";
 import resume from "../assets/Anna_Brisland_Resume.pdf";
-import { useState } from "react";
 
 export default function Header({ isMobile, handleScroll }) {
   let currentPage = "home";

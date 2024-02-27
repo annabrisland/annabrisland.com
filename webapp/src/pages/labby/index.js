@@ -7,8 +7,6 @@ import LabbyScreen5 from "../../images/LabbyT5.png";
 import { useEffect } from "react";
 import BasePage from "../basePage";
 import ProjectHeader from "../../components/ProjectHeader";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 export default function Labby() {
   useEffect(() => {
@@ -186,10 +184,8 @@ export default function Labby() {
 
   return (
     <div>
-      <Header isProject={true} />
       <ProjectHeader project={"Labby"} description={"A Lab Management System for BC Cancer"} roles={["UI/UX Design","Design Lead"]} img={LabbyIntro} />
       <div>{BasePage(LabbyIntro, "#4E62C7", content)}</div>
-      <Footer />
     </div>
   );
   
