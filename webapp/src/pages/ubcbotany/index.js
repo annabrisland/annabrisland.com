@@ -1,7 +1,5 @@
 import { useEffect } from "react";
-import Header from "../../components/Header";
 import ProjectHeader from "../../components/ProjectHeader";
-import Footer from "../../components/Footer";
 
 import BotanyIntro from "../../assets/images/botany/botanyProjectCover.jpg";
 import Botany1 from "../../assets/images/botany/botany1.jpg";

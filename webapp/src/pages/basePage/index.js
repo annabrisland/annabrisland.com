@@ -1,6 +1,5 @@
 import "./index.css";
 import { useEffect } from "react";
-import Header from "../../components/Header";
 import { useMediaQuery } from "react-responsive";
 
 export default function BasePage(introImage, tintColor, content) {
