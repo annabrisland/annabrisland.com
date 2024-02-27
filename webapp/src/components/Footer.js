@@ -1,11 +1,11 @@
 import "../assets/css/footer.css";
 import { forwardRef } from "react";
 
-function Footer(props, ref) {
+function Footer({ props }, ref) {
   return (
     <footer>
       <div ref={ref} className="footer-container">
-        <h2 className="footer-heading">Have a good day!</h2>
+        <h1 className="footer-heading">Let's keep in contact</h1>
         <ul className="contact-list">
           <li className="contact-list-item">
             <a
@@ -18,7 +18,7 @@ function Footer(props, ref) {
           </li>
           <li className="contact-list-item">
             <a
-              className="footer-item"
+              className="footer-item even"
               target="_blank"
               href="https://www.linkedin.com/in/anna-brisland/"
             >

@@ -2,21 +2,20 @@
   margin: 0 60px;
   display: flex;
   flex-direction: column;
+  border-bottom: solid 1.5px #ebebeb;
+  margin-bottom: 100px;
 }
 
 .footer-heading {
-  font-size: 2.3rem;
-  padding: 100px 0;
-  border-bottom: solid 1.5px #ebebeb;
+  padding: 100px 0 32px 0;
 }
 
 .contact-list {
   display: flex;
-  justify-content: flex-end;
   gap: 20px;
   list-style-type: none;
   margin: 24px 0 0 0;
-  padding: 10px 0 80px 0;
+  padding: 10px 0 100px 0;
   font-size: 1.2rem;
 }
 
@@ -30,4 +29,9 @@
 .footer-item:hover {
   background-color: #1a1a1a;
   color: white;
+  transform: translateX(-4%) translateY(7%) rotate(-4deg);
+}
+
+.even:hover {
+  transform: translateX(2%) translateY(-10%) rotate(3deg);
 }

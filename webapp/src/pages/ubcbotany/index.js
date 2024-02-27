@@ -22,7 +22,6 @@ export default function Botany() {
 
   return (
     <div>
-      <Header isProject={true} />
       <ProjectHeader project={"UBC Botany"} description={"Designing a logo and mascots"} roles={["Illustration","Logo Design","Graphic Design"]} img={BotanyIntro} />
       <section className="project-details grid">
         <p className="description">
@@ -110,7 +109,6 @@ export default function Botany() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

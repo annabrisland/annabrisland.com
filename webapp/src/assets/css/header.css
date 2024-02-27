@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  margin-bottom: 80px;
+  padding: 0 20px 80px 20px;
+  background-color: #f4f4f4;
 }
 
 .name-logo {
