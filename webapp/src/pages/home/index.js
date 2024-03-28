@@ -40,9 +40,53 @@ export default function Home() {
     <div className="App">
         <div className="hero">
           <h1>Hi, I'm Anna</h1>
-          <h3 className="hero-intro">a product designer with a huge passion for the science of design and creative problem solving.</h3>
+          <h3 className="hero-intro">a product designer and developer with a huge passion for the science of design and creative problem solving.</h3>
         </div>
         <section className="content">
+        <div className="grid">
+            <div
+              className="card-3 card"
+              id="tiny-violin"
+              onClick={() => {
+                history.push("tiny-violin");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">Tiny Violin</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                Exploring guesture based interaction by allowing users to enjoy creating music through device interaction.
+                </p>
+                <div>
+                  <p className="card-roles">React JS</p>
+                  <p className="card-roles">TensorFlow</p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="card-4 card"
+              id="sproat-lake"
+              onClick={() => {
+                history.push("sproat-lake");
+              }}
+            >
+              <div className="card-info">
+                <div className="card-head">
+                  <p className="card-title">Sproat Lake</p>
+                  <div className="card-button">{arrowSvg()}</div>
+                </div>
+                <p className="card-desc">
+                  Maze RPG written in vanilla JavaScript and HTML5 Canvas.
+                </p>
+                <div>
+                  <p className="card-roles">JavaScript</p>
+                  <p className="card-roles">HTML5</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="grid">
             <div
               className="card-1 card"

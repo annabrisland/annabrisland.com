@@ -9,6 +9,8 @@ import Labby from "./pages/labby";
 import Botany from "./pages/ubcbotany";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TinyViolin from "./pages/tinyviolin";
+import SproatLake from "./pages/sproatlake";
 
 function App() {
   const [small, setSmall] = useState(false);
@@ -51,6 +53,8 @@ function App() {
           <Route exact path="/kudocoin" component={KudoCoin} />
           <Route exact path="/labby" component={Labby} />
           <Route exact path="/ubcbotany" component={Botany} />
+          <Route exact path="/tiny-violin" component={TinyViolin} />
+          <Route exact path="/sproat-lake" component={SproatLake} />
         </Router>
       </div>
       <Footer text={""} ref={ref} />

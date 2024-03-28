@@ -36,7 +36,7 @@ a {
 
 .hero-intro {
   font-size: 1.7rem;
-  width: 45%;
+  width: 50%;
   font-weight: 500;
 }
 
@@ -195,6 +195,20 @@ a {
   cursor: pointer;
 }
 
+#tiny-violin {
+  background-image: url(../images/tinyViolinCover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#sproat-lake {
+  background-image: url(../images/sproatLakeCover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 #ubc-botany {
   background-image: url(../images/ubcBotanyCover.jpg);
   background-repeat: no-repeat;
@@ -240,6 +254,7 @@ a {
   border-radius: 20px;
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 20px;
 }
 
 .project-details {
@@ -249,6 +264,7 @@ a {
 .description {
   grid-column: span 6;
   font-size: 1.6rem;
+  margin-bottom: 100px;
 }
 
 .bold-text {
@@ -271,10 +287,33 @@ a {
   margin: 200px 0 200px 0;
 }
 
-.roles-list {
+.info-list {
   grid-column: 10 / span 3;
-  font-size: 1.2rem;
+}
+
+.roles-list, .links-list {
+  font-size: 20px;
   font-weight: 500;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.links-list a {
+  width: fit-content;
+  margin: 6px 0;
+  border-bottom: #1a1a1a 1.5px solid;
+  transition: 0.3s;
+}
+
+.links-list a:hover {
+  font-size: 24px;
+  margin: 3.25px 0;
+  border-bottom: #1a1a1a 1.5px solid;
+  transition: 0.3s;
 }
 
 .project-img {
