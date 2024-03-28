@@ -57,7 +57,7 @@ export default function Home() {
                   <div className="card-button">{arrowSvg()}</div>
                 </div>
                 <p className="card-desc">
-                Exploring guesture based interaction by allowing users to enjoy creating music through device interaction.
+                Exploring gesture based interaction by allowing users to enjoy creating music through device interaction.
                 </p>
                 <div>
                   <p className="card-roles">React JS</p>
